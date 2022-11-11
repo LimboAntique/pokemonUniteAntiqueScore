@@ -6,7 +6,6 @@ from PlayerStats import getPlayersStatistics, getOnePlayerDetails
 import argparse
 import re
 from AntiqueDriver import AntiqueDriver
-from pprint import pprint
 
 
 def generate_antique_score(antique_driver):
