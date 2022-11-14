@@ -219,7 +219,9 @@ class AntiqueScore:
             with open("./dump_data/top100daily/" + last_week_top100_file + ".json", "r") as readfile:
                 last_top100_data = json.load(readfile)
         with open(path + file_name, "w", newline="") as csvfile:
-            fieldnames = ["排名", "名称", "排位指数", "指数变化", "单边获胜率", "胜率变化", "热度排名", "选出率", '百大选出率', "百大选出排名", "百大选出率变化"]
+            fieldnames = ["排名", "名称", "排位指数", "指数变化", "单边获胜率", "胜率变化", "热度排名", "选出率",
+                          # '百大选出率', "百大选出排名", "百大选出率变化"
+                          ]
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             line = 1
@@ -248,19 +250,19 @@ class AntiqueScore:
                         ) + "%",
                         "热度排名": d["pick_rate_rank"],
                         "选出率": str(d["pick_rate"]) + '%',
-                        "百大选出率": str(round(
-                            100 * top100_data['pokemons'][d["name"]]["use_rate"],
-                            2,
-                        )) + "%",
-                        "百大选出排名": str(top100_data['pokemons_use_rate_sort'].index(d["name"]) + 1),
-                        "百大选出率变化": str(
-                                round(
-                                    100
-                                    * (top100_data['pokemons'][d["name"]]["use_rate"] -
-                                        last_top100_data['pokemons'][d["name"]]["use_rate"]),
-                                    2,
-                                )
-                            ) + "%",
+                        # "百大选出率": str(round(
+                        #     100 * top100_data['pokemons'][d["name"]]["use_rate"],
+                        #     2,
+                        # )) + "%",
+                        # "百大选出排名": str(top100_data['pokemons_use_rate_sort'].index(d["name"]) + 1),
+                        # "百大选出率变化": str(
+                        #         round(
+                        #             100
+                        #             * (top100_data['pokemons'][d["name"]]["use_rate"] -
+                        #                 last_top100_data['pokemons'][d["name"]]["use_rate"]),
+                        #             2,
+                        #         )
+                        #     ) + "%",
                     }
                 )
                 line += 1
