@@ -39,8 +39,9 @@ class Top100Players:
 
     def get_yesterday_one_player_static(self, name, new_mode):
         data = AntiqueScoreUtil.get_one_player_data(self.driver, name, cache_days=1)
-        if not data:
+        if not data or "player" not in data:
             return {}
+        name = data["player"]["profile"]["userShort"]
         if not new_mode:
             all_matches = list(
                 filter(
@@ -64,7 +65,7 @@ class Top100Players:
         for match in all_matches:
             self.match_ids["{0}_{1}_{2}".format(match["GameStartTime"], match.get("Camp1Score", 0),
                                                 match.get("Camp2Score", 0))] = ""
-            battle_sets = AntiqueScoreUtil.get_match_battle_set(match, data["player"]["Uid"])
+            battle_sets = AntiqueScoreUtil.get_match_battle_set(match, data["player"]["profile"]["uid"])
             if not battle_sets:
                 continue
             battle_set = "_".join(battle_sets)
@@ -94,7 +95,7 @@ class Top100Players:
                     "win": 0,
                     "lost": 0,
                 }
-            if AntiqueScoreUtil.check_is_match_win(match, data["player"]["Uid"]):
+            if AntiqueScoreUtil.check_is_match_win(match, data["player"]["profile"]["uid"]):
                 self.daily_data["pokemons"][pokemon_name]["win"] += 1
                 self.daily_data["pokemons"][pokemon_name]["battle_sets"][battle_set][
                     "win"
@@ -117,7 +118,7 @@ class Top100Players:
     def get_yesterday_all_players_statics(self, new_mode=False):
         if not new_mode:
             json_file_path_name = (
-                    path + str(AntiqueScoreUtil.get_past_x_day_start_epoch(1)) + ".json"
+                    path + str(AntiqueScoreUtil.get_past_x_day_start_epoch(2)) + ".json"
             )
         else:
             json_file_path_name = (
@@ -152,6 +153,11 @@ class Top100Players:
             reverse=True,
         )
         return keys
+
+    @staticmethod
+    def _get_player_name(driver, short_name):
+        player_data = AntiqueScoreUtil.get_one_player_data(driver, short_name)
+        return player_data["player"]["profile"]["playerName"]
 
     def get_past_x_days_summary(self, start=7, end=0, force_fetch=False, new_mode=False):
         if start - end < 1:
@@ -198,7 +204,8 @@ class Top100Players:
                 else:
                     file_path_name = path + str(AntiqueScoreUtil.get_past_x_day_start_epoch(0)) + "_new_mode.json"
                 if not os.path.exists(file_path_name):
-                    if d == 1:
+                    print(file_path_name, d)
+                    if d == 0:
                         self.get_yesterday_all_players_statics(new_mode)
                     else:
                         continue
@@ -222,6 +229,8 @@ class Top100Players:
                                 season_battle_threshold_soft=0,
                             )
                         if players_items[player]:
+                            if pokemon not in players_items[player]:
+                                continue
                             data["pokemons"][pokemon]["players"][player][
                                 "battle_items"
                             ] = players_items[player][pokemon]["items_string"]
@@ -365,7 +374,7 @@ class Top100Players:
                         [
                             "",
                             "",
-                            name,
+                            Top100Players._get_player_name(self.driver, name),
                             data["pokemons"][pokemon]["players"][name]["win"],
                             str(
                                 round(
@@ -536,12 +545,12 @@ class Top100Players:
                                     2,
                                 )
                             )
-                                     + "%",
+                                          + "%",
                             "胜场数": data["pokemons"][pokemon]["win"],
                             "胜率": str(
                                 round(100 * data["pokemons"][pokemon]["win_rate"], 2)
                             )
-                                  + "%",
+                                    + "%",
                         }
                     )
             print("generated csv file: " + simple_csv_file_name)
@@ -624,14 +633,14 @@ class Top100Players:
             return {}
         for pokemon in data["player"]["Pokemons"]:
             if (
-                    not has_season_win or int(pokemon["Statistics"]["SeasonWins"]) > 0
+                    not has_season_win or int(pokemon["statistics"]["SeasonWins"]) > 0
             ) and (
                     (
                             int(pokemon["TotalBattles"]) >= total_battle_threshold
-                            and int(pokemon["Statistics"]["SeasonBattles"])
+                            and int(pokemon["statistics"]["SeasonBattles"])
                             >= season_battle_threshold_soft
                     )
-                    or int(pokemon["Statistics"]["SeasonBattles"])
+                    or int(pokemon["statistics"]["SeasonBattles"])
                     >= season_battle_threshold
             ):
                 if "Name" not in pokemon:
@@ -642,15 +651,15 @@ class Top100Players:
                 )
                 player_data[pokemon_name] = {
                     "items_string": items_string,
-                    "win": pokemon["Statistics"]["SeasonWins"]
+                    "win": pokemon["statistics"]["SeasonWins"]
                            + int(
                         0.2
                         * (
-                                pokemon["Statistics"]["NoOfWins"]
-                                - pokemon["Statistics"]["SeasonWins"]
+                                pokemon["statistics"]["NoOfWins"]
+                                - pokemon["statistics"]["SeasonWins"]
                         )
                     ),
-                    "total": pokemon["Statistics"]["SeasonBattles"]
+                    "total": pokemon["statistics"]["SeasonBattles"]
                              + int(
                         0.2
                         * (
@@ -754,3 +763,5 @@ class Top100Players:
             print("items_recommend.csv is generated")
         except Exception as e:
             print("items_recommend.csv failed due to " + e.message)
+
+

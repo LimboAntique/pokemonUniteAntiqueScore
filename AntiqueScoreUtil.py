@@ -14,27 +14,8 @@ from halo import Halo
 
 player_dump_data_path = "../player_dump_data/"
 
-pokemon_image_to_name_dict = {"t_Square_Venusaur": "Venusaur", "t_Square_Charizard": "Charizard",
-                              "t_Square_Blastoise": "Blastoise", "t_Square_Pikachu": "Pikachu",
-                              "t_Square_Clefable": "Clefable", "t_Square_Ninetales": "Alolan Ninetales",
-                              "t_Square_Wigglytuff": "Wigglytuff", "t_Square_Machamp": "Machamp",
-                              "t_Square_Slowbro": "Slowbro", "t_Square_Dodrio": "Dodrio", "t_Square_Gengar": "Gengar",
-                              "t_Square_Blissey": "Blissey", "t_Square_MrMime": "Mr. Mime", "t_Square_Scizor": "Scizor",
-                              "t_Square_Snorlax": "Snorlax", "t_Square_Dragonite": "Dragonite", "t_Square_Mew": "Mew",
-                              "t_Square_Azumarill": "Azumarill", "t_Square_Espeon": "Espeon",
-                              "t_Square_Mamoswine": "Mamoswine", "t_Square_Tyranitar": "Tyranitar",
-                              "t_Square_Gardevoir": "Gardevoir", "t_Square_Absol": "Absol",
-                              "t_Square_Garchomp": "Garchomp", "t_Square_Lucario": "Lucario",
-                              "t_Square_Glaceon": "Glaceon", "t_Square_Crustle": "Crustle",
-                              "t_Square_Zoroark": "Zoroark", "t_Square_Delphox": "Delphox",
-                              "t_Square_Greninja": "Greninja", "t_Square_Talonflame": "Talonflame",
-                              "t_Square_Aegislash": "Aegislash", "t_Square_Sylveon": "Sylveon",
-                              "t_Square_Trevenant": "Trevenant", "t_Square_Hoopa": "Hoopa",
-                              "t_Square_Decidueye": "Decidueye", "t_Square_Tsareena": "Tsareena",
-                              "t_Square_Buzzwole": "Buzzwole", "t_Square_Zeraora": "Zeraora",
-                              "t_Square_Cinderace": "Cinderace", "t_Square_Greedent": "Greedent",
-                              "t_Square_Eldegoss": "Eldegoss", "t_Square_Cramorant": "Cramorant",
-                              "t_Square_Duraludon": "Duraludon"}
+pokemon_image_to_name_dict = {"t_Square_Venusaur": "Venusaur", "t_Square_Charizard": "Charizard", "t_Square_Blastoise": "Blastoise", "t_Square_Pikachu": "Pikachu", "t_Square_Clefable": "Clefable", "t_Square_Ninetales": "Alolan Ninetales", "t_Square_Wigglytuff": "Wigglytuff", "t_Square_Machamp": "Machamp", "t_Square_Slowbro": "Slowbro", "t_Square_Dodrio": "Dodrio", "t_Square_Gengar": "Gengar", "t_Square_Blissey": "Blissey", "t_Square_MrMime": "Mr. Mime", "t_Square_Scizor": "Scizor", "t_Square_Snorlax": "Snorlax", "t_Square_Dragonite": "Dragonite", "t_Square_Mew": "Mew", "t_Square_Azumarill": "Azumarill", "t_Square_Espeon": "Espeon", "t_Square_Mamoswine": "Mamoswine", "t_Square_Tyranitar": "Tyranitar", "t_Square_Gardevoir": "Gardevoir", "t_Square_Sableye": "Sableye", "t_Square_Absol": "Absol", "t_Square_Garchomp": "Garchomp", "t_Square_Lucario": "Lucario", "t_Square_Glaceon": "Glaceon", "t_Square_Crustle": "Crustle", "t_Square_Zoroark": "Zoroark", "t_Square_Delphox": "Delphox", "t_Square_Greninja": "Greninja", "t_Square_Talonflame": "Talonflame", "t_Square_Aegislash": "Aegislash", "t_Square_Sylveon": "Sylveon", "t_Square_Trevenant": "Trevenant", "t_Square_Hoopa": "Hoopa", "t_Square_Decidueye": "Decidueye", "t_Square_Tsareena": "Tsareena", "t_Square_Buzzwole": "Buzzwole", "t_Square_Zeraora": "Zeraora", "t_Square_Cinderace": "Cinderace", "t_Square_Greedent": "Greedent", "t_Square_Eldegoss": "Eldegoss", "t_Square_Cramorant": "Cramorant", "t_Square_Duraludon": "Duraludon"}
+pokemon_image_to_name_dict = {"t_Square_Venusaur": "Venusaur", "t_Square_Charizard": "Charizard", "t_Square_Blastoise": "Blastoise", "t_Square_Pikachu": "Pikachu", "t_Square_Clefable": "Clefable", "t_Square_Ninetales": "Alolan Ninetales", "t_Square_Wigglytuff": "Wigglytuff", "t_Square_Machamp": "Machamp", "t_Square_Slowbro": "Slowbro", "t_Square_Dodrio": "Dodrio", "t_Square_Gengar": "Gengar", "t_Square_Blissey": "Blissey", "t_Square_MrMime": "Mr. Mime", "t_Square_Scizor": "Scizor", "t_Square_Snorlax": "Snorlax", "t_Square_Dragonite": "Dragonite", "t_Square_Mew": "Mew", "t_Square_Azumarill": "Azumarill", "t_Square_Espeon": "Espeon", "t_Square_Mamoswine": "Mamoswine", "t_Square_Tyranitar": "Tyranitar", "t_Square_Gardevoir": "Gardevoir", "t_Square_Sableye": "Sableye", "t_Square_Absol": "Absol", "t_Square_Garchomp": "Garchomp", "t_Square_Lucario": "Lucario", "t_Square_Glaceon": "Glaceon", "t_Square_Crustle": "Crustle", "t_Square_Zoroark": "Zoroark", "t_Square_Delphox": "Delphox", "t_Square_Greninja": "Greninja", "t_Square_Talonflame": "Talonflame", "t_Square_Aegislash": "Aegislash", "t_Square_Sylveon": "Sylveon", "t_Square_Trevenant": "Trevenant", "t_Square_Hoopa": "Hoopa", "t_Square_Decidueye": "Decidueye", "t_Square_Tsareena": "Tsareena", "t_Square_Buzzwole": "Buzzwole", "t_Square_Zeraora": "Zeraora", "t_Square_Cinderace": "Cinderace", "t_Square_Greedent": "Greedent", "t_Square_Eldegoss": "Eldegoss", "t_Square_Cramorant": "Cramorant", "t_Square_Duraludon": "Duraludon"}
 
 pokemon_chinese_name_dict = {"Venusaur": "妙蛙花", "Charizard": "喷火龙", "Blastoise": "水箭龟", "Pikachu": "皮卡丘",
                              "Alolan Ninetales": "阿罗拉九尾", "Wigglytuff": "胖可丁", "Machamp": "怪力", "Slowbro": "呆壳兽",
@@ -139,7 +120,9 @@ pokemon_skill_names = {"t_Skill_Bulbasaur_S12": "Giga Drain", "t_Skill_Bulbasaur
                        "t_Skill_Clefable_S11": "Moonlight", "t_Skill_Clefable_S12": "Draining Kiss",
                        "t_Skill_Clefable_S21": "Gravity", "t_Skill_Clefable_S22": "Follow Me",
                        "t_Skill_Zorua_S11": "Night Slash", "t_Skill_Zorua_S12": "Feint Attack",
-                       "t_Skill_Zorua_S21": "Shadow Claw", "t_Skill_Zorua_S22": "Cut"}
+                       "t_Skill_Zorua_S21": "Shadow Claw", "t_Skill_Zorua_S22": "Cut",
+                       "t_Skill_Sableye_S11": "Knock Off", "t_Skill_Sableye_S12": "Shadow Sneak",
+                       "t_Skill_Sableye_S21": "Feint Attack", "t_Skill_Sableye_S22": "Confuse Ray"}
 
 item_name_dict = {
     "Eos2": "救援屏障",
@@ -337,6 +320,8 @@ skills_dict = {
     "Feint Attack": "出奇一击",
     "Shadow Claw": "暗影爪",
     "Cut": "居合劈",
+    "Knock Off": "拍落",
+    "Confuse Ray": "奇异之光",
 }
 
 unitID_to_pokemon_name_dict = {
@@ -462,6 +447,7 @@ def get_one_player_data(
                     player_data["dump_time"] = 0
                     time.sleep(10)
                     continue
+            file_path_name = player_dump_data_path + player_data["player"]["profile"]["userShort"] + ".json"
         except:
             player_data["dump_time"] = 0
             force_fetch = True

@@ -58,9 +58,9 @@ def getOnePlayerDetails(name, games_count, driver):
         'pokemons': {},
         'friends': {},
     }
-    current_rank = data["player"]["CurrentRank"]
+    current_rank = data["player"]["profile"]["currentRank"]
     if current_rank == "Master":
-        current_rank += ": " + str(data["player"]["MasterPoints"])
+        current_rank += ": " + str(data["player"]["profile"]["masterPoints"])
     for match in matches:
         pokemon_name = unit_id_to_pokemon_name[
             match["CurrentPlayer"]["HeroID"]
@@ -102,7 +102,7 @@ def getOnePlayerDetails(name, games_count, driver):
             results['friends'][friend]['overall'][key] += 1
             results['friends'][friend][queue][key] += 1
 
-    print("Check last " + str(len(matches)) + " rank games result for " + data["player"]["PlayerName"] + " (" +
+    print("Check last " + str(len(matches)) + " rank games result for " + data["player"]["profile"]["playerName"] + " (" +
           current_rank + ") ")
     table = PrettyTable()
     table.set_style(DOUBLE_BORDER)
@@ -116,7 +116,7 @@ def getOnePlayerDetails(name, games_count, driver):
         "五排",
     ]
     table.add_row([
-        '玩家："' + data["player"]["PlayerName"] + '"',
+        '玩家："' + data["player"]["profile"]["playerName"] + '"',
         getOnePlayerDetailsRow(results['all']['overall']),
         getOnePlayerDetailsRow(results['all'][1]),
         getOnePlayerDetailsRow(results['all'][2]),
@@ -195,7 +195,7 @@ def getPlayerStatistics(antique_driver, name, track_back_days=0):
             key=lambda _match: int(_match["GameStartTime"]),
             reverse=True,
         )
-        user_name = data["player"]["PlayerName"]
+        user_name = data["player"]["profile"]["playerName"]
         today_rank_matches = list(
             filter(
                 lambda _match: (
@@ -205,10 +205,10 @@ def getPlayerStatistics(antique_driver, name, track_back_days=0):
                 matches,
             )
         )
-        current_rank = data["player"]["CurrentRank"]
+        current_rank = data["player"]["profile"]["currentRank"]
         season_winrate = getCurrentSeasonWinRate(data)
         if current_rank == "Master":
-            current_rank += ": " + str(data["player"]["MasterPoints"])
+            current_rank += ": " + str(data["player"]["profile"]["masterPoints"])
         if not today_rank_matches:
             return PlayerStats(user_name, 0, 0, 0, "", current_rank, season_winrate)
         last_played_pokemon = unit_id_to_pokemon_name[
@@ -243,8 +243,8 @@ def getCurrentSeasonWinRate(player_data):
     win = 0
     lost = 0
     for pokemon in pokemons:
-        win += pokemon["Statistics"]["SeasonWins"]
-        lost += pokemon["Statistics"]["SeasonLoses"]
+        win += pokemon["statistics"]["SeasonWins"]
+        lost += pokemon["statistics"]["SeasonLoses"]
     if win + lost <= 0:
         return "N/A"
     return str(round(100 * (win / (win + lost)), 2)) + "%"

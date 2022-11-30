@@ -13,7 +13,6 @@ script_ver = 0.3  # adding English CSV support
 # script_ver = 0.2  # change 上周指数变为指数变化，添加妖火红狐翻译, 添加胜率变化
 # script_ver = 0.1  # basic code
 path = "./dump_data/"
-support_languages = ["Chinese", "English"]
 
 
 class AntiqueScore:
@@ -24,10 +23,6 @@ class AntiqueScore:
         self.gen_pokemon_list()
         # print(self.data)
         self.antique_score_data = {}
-
-    @staticmethod
-    def get_support_languages():
-        return support_languages
 
     def get_fetched_data(self):
         return self.data
