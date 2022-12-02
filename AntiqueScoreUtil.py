@@ -14,8 +14,7 @@ from halo import Halo
 
 player_dump_data_path = "../player_dump_data/"
 
-pokemon_image_to_name_dict = {"t_Square_Venusaur": "Venusaur", "t_Square_Charizard": "Charizard", "t_Square_Blastoise": "Blastoise", "t_Square_Pikachu": "Pikachu", "t_Square_Clefable": "Clefable", "t_Square_Ninetales": "Alolan Ninetales", "t_Square_Wigglytuff": "Wigglytuff", "t_Square_Machamp": "Machamp", "t_Square_Slowbro": "Slowbro", "t_Square_Dodrio": "Dodrio", "t_Square_Gengar": "Gengar", "t_Square_Blissey": "Blissey", "t_Square_MrMime": "Mr. Mime", "t_Square_Scizor": "Scizor", "t_Square_Snorlax": "Snorlax", "t_Square_Dragonite": "Dragonite", "t_Square_Mew": "Mew", "t_Square_Azumarill": "Azumarill", "t_Square_Espeon": "Espeon", "t_Square_Mamoswine": "Mamoswine", "t_Square_Tyranitar": "Tyranitar", "t_Square_Gardevoir": "Gardevoir", "t_Square_Sableye": "Sableye", "t_Square_Absol": "Absol", "t_Square_Garchomp": "Garchomp", "t_Square_Lucario": "Lucario", "t_Square_Glaceon": "Glaceon", "t_Square_Crustle": "Crustle", "t_Square_Zoroark": "Zoroark", "t_Square_Delphox": "Delphox", "t_Square_Greninja": "Greninja", "t_Square_Talonflame": "Talonflame", "t_Square_Aegislash": "Aegislash", "t_Square_Sylveon": "Sylveon", "t_Square_Trevenant": "Trevenant", "t_Square_Hoopa": "Hoopa", "t_Square_Decidueye": "Decidueye", "t_Square_Tsareena": "Tsareena", "t_Square_Buzzwole": "Buzzwole", "t_Square_Zeraora": "Zeraora", "t_Square_Cinderace": "Cinderace", "t_Square_Greedent": "Greedent", "t_Square_Eldegoss": "Eldegoss", "t_Square_Cramorant": "Cramorant", "t_Square_Duraludon": "Duraludon"}
-pokemon_image_to_name_dict = {"t_Square_Venusaur": "Venusaur", "t_Square_Charizard": "Charizard", "t_Square_Blastoise": "Blastoise", "t_Square_Pikachu": "Pikachu", "t_Square_Clefable": "Clefable", "t_Square_Ninetales": "Alolan Ninetales", "t_Square_Wigglytuff": "Wigglytuff", "t_Square_Machamp": "Machamp", "t_Square_Slowbro": "Slowbro", "t_Square_Dodrio": "Dodrio", "t_Square_Gengar": "Gengar", "t_Square_Blissey": "Blissey", "t_Square_MrMime": "Mr. Mime", "t_Square_Scizor": "Scizor", "t_Square_Snorlax": "Snorlax", "t_Square_Dragonite": "Dragonite", "t_Square_Mew": "Mew", "t_Square_Azumarill": "Azumarill", "t_Square_Espeon": "Espeon", "t_Square_Mamoswine": "Mamoswine", "t_Square_Tyranitar": "Tyranitar", "t_Square_Gardevoir": "Gardevoir", "t_Square_Sableye": "Sableye", "t_Square_Absol": "Absol", "t_Square_Garchomp": "Garchomp", "t_Square_Lucario": "Lucario", "t_Square_Glaceon": "Glaceon", "t_Square_Crustle": "Crustle", "t_Square_Zoroark": "Zoroark", "t_Square_Delphox": "Delphox", "t_Square_Greninja": "Greninja", "t_Square_Talonflame": "Talonflame", "t_Square_Aegislash": "Aegislash", "t_Square_Sylveon": "Sylveon", "t_Square_Trevenant": "Trevenant", "t_Square_Hoopa": "Hoopa", "t_Square_Decidueye": "Decidueye", "t_Square_Tsareena": "Tsareena", "t_Square_Buzzwole": "Buzzwole", "t_Square_Zeraora": "Zeraora", "t_Square_Cinderace": "Cinderace", "t_Square_Greedent": "Greedent", "t_Square_Eldegoss": "Eldegoss", "t_Square_Cramorant": "Cramorant", "t_Square_Duraludon": "Duraludon"}
+pokemon_image_to_name_dict = {"t_Square_Venusaur": "Venusaur", "t_Square_Charizard": "Charizard", "t_Square_Blastoise": "Blastoise", "t_Square_Pikachu": "Pikachu", "t_Square_Clefable": "Clefable", "t_Square_Ninetales": "Alolan Ninetales", "t_Square_Wigglytuff": "Wigglytuff", "t_Square_Machamp": "Machamp", "t_Square_Slowbro": "Slowbro", "t_Square_Dodrio": "Dodrio", "t_Square_Gengar": "Gengar", "t_Square_Blissey": "Blissey", "t_Square_MrMime": "Mr. Mime", "t_Square_Scizor": "Scizor", "t_Square_Snorlax": "Snorlax", "t_Square_Dragonite": "Dragonite", "t_Square_Mew": "Mew", "t_Square_Azumarill": "Azumarill", "t_Square_Espeon": "Espeon", "t_Square_Mamoswine": "Mamoswine", "t_Square_Tyranitar": "Tyranitar", "t_Square_Gardevoir": "Gardevoir", "t_Square_Sableye": "Sableye", "t_Square_Absol": "Absol", "t_Square_Garchomp": "Garchomp", "t_Square_Lucario": "Lucario", "t_Square_Glaceon": "Glaceon", "t_Square_Crustle": "Crustle", "t_Square_Zoroark": "Zoroark", "t_Square_Delphox": "Delphox", "t_Square_Greninja": "Greninja", "t_Square_Talonflame": "Talonflame", "t_Square_Aegislash": "Aegislash", "t_Square_Sylveon": "Sylveon", "t_Square_Trevenant": "Trevenant", "t_Square_Hoopa": "Hoopa", "t_Square_Decidueye": "Decidueye", "t_Square_Tsareena": "Tsareena", "t_Square_Comfey": "Comfey", "t_Square_Buzzwole": "Buzzwole", "t_Square_Zeraora": "Zeraora", "t_Square_Cinderace": "Cinderace", "t_Square_Greedent": "Greedent", "t_Square_Eldegoss": "Eldegoss", "t_Square_Cramorant": "Cramorant", "t_Square_Duraludon": "Duraludon", "t_Square_Dragapult": "Dragapult", "t_Square_Urshifu_Single": "Urshifu", "t_Square_Urshifu_Rapid": "Urshifu"}
 
 pokemon_chinese_name_dict = {"Venusaur": "妙蛙花", "Charizard": "喷火龙", "Blastoise": "水箭龟", "Pikachu": "皮卡丘",
                              "Alolan Ninetales": "阿罗拉九尾", "Wigglytuff": "胖可丁", "Machamp": "怪力", "Slowbro": "呆壳兽",
@@ -27,7 +26,7 @@ pokemon_chinese_name_dict = {"Venusaur": "妙蛙花", "Charizard": "喷火龙", 
                              "Decidueye": "狙射树枭", "Tsareena": "甜冷美后", "Zeraora": "捷拉奥拉", "Cinderace": "闪焰王牌",
                              "Greedent": "藏饱栗鼠", "Eldegoss": "白蓬蓬", "Duraludon": "铝钢龙", "Cramorant": "古月鸟",
                              "Buzzwole": "爆肌蚊", "Tyranitar": "班基拉斯", "Mew": "梦幻", "Dodrio": "嘟嘟利", "Scizor": "巨钳螳螂",
-                             "Clefable": "皮可西", "Sableye": "勾魂眼", "Zoroark": "索罗亚克"}
+                             "Clefable": "皮可西", "Sableye": "勾魂眼", "Zoroark": "索罗亚克", "Urshifu": "武道熊师"}
 
 pokemon_skill_names = {"t_Skill_Bulbasaur_S12": "Giga Drain", "t_Skill_Bulbasaur_U12": "Petal Dance",
                        "t_Skill_Bulbasaur_S11": "Sludge Bomb", "t_Skill_Bulbasaur_U11": "Solar Beam",
@@ -122,7 +121,9 @@ pokemon_skill_names = {"t_Skill_Bulbasaur_S12": "Giga Drain", "t_Skill_Bulbasaur
                        "t_Skill_Zorua_S11": "Night Slash", "t_Skill_Zorua_S12": "Feint Attack",
                        "t_Skill_Zorua_S21": "Shadow Claw", "t_Skill_Zorua_S22": "Cut",
                        "t_Skill_Sableye_S11": "Knock Off", "t_Skill_Sableye_S12": "Shadow Sneak",
-                       "t_Skill_Sableye_S21": "Feint Attack", "t_Skill_Sableye_S22": "Confuse Ray"}
+                       "t_Skill_Sableye_S21": "Feint Attack", "t_Skill_Sableye_S22": "Confuse Ray",
+                       "t_Skill_Urshifu_S11": "Wicked Blow", "t_Skill_Urshifu_S12": "Throat Chop",
+                       "t_Skill_Urshifu_S21": "Surging Strikes", "t_Skill_Urshifu_S22": "Liquidation", }
 
 item_name_dict = {
     "Eos2": "救援屏障",
@@ -322,52 +323,10 @@ skills_dict = {
     "Cut": "居合劈",
     "Knock Off": "拍落",
     "Confuse Ray": "奇异之光",
-}
-
-unitID_to_pokemon_name_dict = {
-    100001: "Venusaur",
-    100004: "Charizard",
-    100025: "Pikachu",
-    100039: "Wigglytuff",
-    100113: "Blissey",
-    100147: "Dragonite",
-    100183: "Azumarill",
-    100196: "Espeon",
-    100220: "Mamoswine",
-    100448: "Lucario",
-    100471: "Glaceon",
-    100557: "Crustle",
-    100653: "Delphox",
-    100661: "Talonflame",
-    100679: "Aegislash",
-    100700: "Sylveon",
-    100708: "Trevenant",
-    100720: "Hoopa",
-    100724: "Decidueye",
-    100763: "Tsareena",
-    100813: "Cinderace",
-    100829: "Eldegoss",
-    100884: "Duraludon",
-    180007: "Blastoise",
-    190037: "Alolan Ninetales",
-    190066: "Machamp",
-    190079: "Slowbro",
-    190092: "Gengar",
-    190122: "Mr. Mime",
-    190143: "Snorlax",
-    190280: "Gardevoir",
-    190359: "Absol",
-    190443: "Garchomp",
-    190656: "Greninja",
-    190807: "Zeraora",
-    190820: "Greedent",
-    190845: "Cramorant",
-    100794: "Buzzwole",
-    100246: "Tyranitar",
-    100151: "Mew",
-    100084: "Dodrio",
-    100123: "Scizor",
-    100035: "Clefable",
+    "Wicked Blow": "暗冥强击",
+    "Throat Chop": "深渊突刺",
+    "Surging Strikes": "水流连打",
+    "Liquidation": "水流裂破",
 }
 
 url_base = "https://uniteapi.dev/"
