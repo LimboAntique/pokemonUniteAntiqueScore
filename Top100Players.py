@@ -663,8 +663,8 @@ class Top100Players:
                              + int(
                         0.2
                         * (
-                                pokemon["Statistics"]["TotalBattles"]
-                                - pokemon["Statistics"]["SeasonBattles"]
+                                pokemon["statistics"]["TotalBattles"]
+                                - pokemon["statistics"]["SeasonBattles"]
                         )
                     ),
                 }

@@ -145,6 +145,8 @@ item_name_dict = {
     "Eos4": "亿奥斯饼干",
     "RockyHelmet": "凸凸头盔",
     "Leftovers": "吃剩的东西",
+    "ComboScarf": "连打围巾",
+    "CureCrown": "治愈王冠",
 }
 
 skills_dict = {
