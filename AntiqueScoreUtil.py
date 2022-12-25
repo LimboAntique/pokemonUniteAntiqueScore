@@ -108,8 +108,7 @@ pokemon_skill_names = {"t_Skill_Bulbasaur_S12": "Giga Drain", "t_Skill_Bulbasaur
                        "t_Skill_Tyranitar_S21": "Ancient Power",
                        "t_Skill_Tyranitar_S22": "Sand Tomb", "t_Skill_Mew_S1B": "Solar Beam",
                        "t_Skill_Mew_S2B": "Light Screen", "t_Skill_Mew_S1C": "Surf", "t_Skill_Mew_S2C": "Agility",
-                       "t_Skill_Mew_S1A": "Electro Ball", "t_Skill_Mew_S2A": "Coaching",
-                       "t_Skill_Ingame_BT": "In Choice", "t_Skill_Dodrio_S12": "Drill Peck",
+                       "t_Skill_Mew_S1A": "Electro Ball", "t_Skill_Mew_S2A": "Coaching", "t_Skill_Dodrio_S12": "Drill Peck",
                        "t_Skill_Dodrio_S22": "Jump Kick", "t_Skill_Dodrio_S21": "Agility",
                        "t_Skill_Dodrio_S11": "Tri Attack", "t_Skill_Scyther_S11": "Dual Wingbeat",
                        "t_Skill_Scyther_S12": "Bullet Punch", "t_Skill_Scyther_S21": "Double Hit",
@@ -122,8 +121,8 @@ pokemon_skill_names = {"t_Skill_Bulbasaur_S12": "Giga Drain", "t_Skill_Bulbasaur
                        "t_Skill_Zorua_S21": "Shadow Claw", "t_Skill_Zorua_S22": "Cut",
                        "t_Skill_Sableye_S11": "Knock Off", "t_Skill_Sableye_S12": "Shadow Sneak",
                        "t_Skill_Sableye_S21": "Feint Attack", "t_Skill_Sableye_S22": "Confuse Ray",
-                       "t_Skill_Urshifu_S11": "Wicked Blow", "t_Skill_Urshifu_S12": "Throat Chop",
-                       "t_Skill_Urshifu_S21": "Surging Strikes", "t_Skill_Urshifu_S22": "Liquidation", }
+                       "t_Skill_Urshifu_S11": "Wicked Blow", "t_Skill_Urshifu_S21": "Throat Chop",
+                       "t_Skill_Urshifu_S12": "Surging Strikes", "t_Skill_Urshifu_S22": "Liquidation", }
 
 item_name_dict = {
     "Eos2": "救援屏障",
@@ -303,7 +302,6 @@ skills_dict = {
     "Sand Tomb": "流沙地狱",
     "Power Swap": "力量互换",
     "Coaching": "指导" + "\t",
-    "In Choice": "技能未定",
     "Drill Peck": "啄钻" + "\t",
     "Jump Kick": "飞踢" + "\t",
     "Tri Attack": "三重攻击",
@@ -323,7 +321,7 @@ skills_dict = {
     "Feint Attack": "出奇一击",
     "Shadow Claw": "暗影爪",
     "Cut": "居合劈",
-    "Knock Off": "拍落",
+    "Knock Off": "拍落" + "\t",
     "Confuse Ray": "奇异之光",
     "Wicked Blow": "暗冥强击",
     "Throat Chop": "深渊突刺",
