@@ -2,7 +2,7 @@
 
 from AntiqueScore import AntiqueScore
 from Top100Players import Top100Players
-from PlayerStats import getPlayersStatistics, getOnePlayerDetails
+# from PlayerStats import getPlayersStatistics, getOnePlayerDetails
 import argparse
 import re
 from AntiqueDriver import AntiqueDriver

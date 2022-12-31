@@ -15,8 +15,12 @@ from bs4 import BeautifulSoup
 from halo import Halo
 
 mongo_client = MongoClient("mongodb+srv://BlakeXu:nljd1SBaKAIVfDH9@antique.uq5zmrd.mongodb.net/?retryWrites=true&w=majority", tlsCAFile=certifi.where())
-mongo_db = mongo_client.get_database["underwear_bot"]
+mongo_db = mongo_client.get_database("underwear_bot")
 mongo_col = mongo_db.get_collection("unite_data")
+unite_data = {}
+for load in mongo_col.find({"unite_api_id": {'$exists': 1}}):
+    unite_data[load["unite_api_id"]] = load
+    unite_data[load["english"]] = load
 
 player_dump_data_path = "../player_dump_data/"
 
@@ -175,8 +179,8 @@ def get_match_battle_set(match, player_uid):
 
     skill1_id = "_".join(target_data["Skill1"].split("_")[0:4])
     skill2_id = "_".join(target_data["Skill2"].split("_")[0:4])
-    skill1_load = mongo_col.find_one({"unite_api_id": skill1_id})
-    skill2_load = mongo_col.find_one({"unite_api_id": skill2_id})
+    skill1_load = unite_data.get(skill1_id, None)
+    skill2_load = unite_data.get(skill2_id, None)
     if not skill1_load or not skill2_load:
         print("Error: unable to get name for " + skill1_id + " or " + skill2_id)
         return None

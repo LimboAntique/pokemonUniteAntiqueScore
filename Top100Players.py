@@ -68,7 +68,7 @@ class Top100Players:
             if not battle_sets:
                 continue
             battle_set = "_".join(battle_sets)
-            pokemon_name = AntiqueScoreUtil.mongo_col.find_one({"unite_api_id": match["currentPlayer"]["playedPokemonImg"]})["english"]
+            pokemon_name = AntiqueScoreUtil.unite_data[match["currentPlayer"]["playedPokemonImg"]]["english"]
             if pokemon_name not in self.daily_data["pokemons"]:
                 self.daily_data["pokemons"][pokemon_name] = {
                     "win": 0,
@@ -343,7 +343,7 @@ class Top100Players:
                 writer.writerow(
                     [
                         index,
-                        AntiqueScoreUtil.mongo_col.find_one({"english": pokemon})["chinese"],
+                        AntiqueScoreUtil.unite_data[pokemon]["chinese"],
                         "\t\t-- 使用人数 --",
                         "- 使用率 -",
                         "- 胜场数 -",
@@ -403,7 +403,7 @@ class Top100Players:
                     for skill in battle_set.split("_"):
                         if not skill:
                             continue
-                        skill_chinese_name = AntiqueScoreUtil.mongo_col.find_one({"english": skill})["chinese"]
+                        skill_chinese_name = AntiqueScoreUtil.unite_data[skill]["chinese"]
                         if len(skill_chinese_name) < 3:
                             skill_chinese_name += "\t"
                         sets.append(skill_chinese_name)
@@ -532,7 +532,7 @@ class Top100Players:
                     writer.writerow(
                         {
                             "排名": index,
-                            "名称": AntiqueScoreUtil.mongo_col.find_one({"english": pokemon})["chinese"],
+                            "名称": AntiqueScoreUtil.unite_data[pokemon]["chinese"],
                             "使用人数": len(data["pokemons"][pokemon]["players"]),
                             "使用率": str(round(100 * use_rate, 2)) + "%",
                             "使用率变化": str(
@@ -569,7 +569,7 @@ class Top100Players:
                         voice_file.write("并列")
                     voice_file.write(
                         "第{0}名, {1}。\n".format(
-                            index, AntiqueScoreUtil.mongo_col.find_one({"english": pokemon})["chinese"]
+                            index, AntiqueScoreUtil.unite_data[pokemon]["chinese"]
                         )
                     )
                     voice_file.write(
@@ -700,7 +700,7 @@ class Top100Players:
         for pokemon in self.items_statics.keys():
             new_data[pokemon] = {
                 "name": pokemon,
-                "chinese_name": AntiqueScoreUtil.mongo_col.find_one({"english": pokemon})["chinese"],
+                "chinese_name": AntiqueScoreUtil.unite_data[pokemon]["chinese"],
             }
             data = self.items_statics[pokemon]
             # sorted_keys = sorted(data.keys(), key=lambda win: data[win]['win'], reverse=True)
