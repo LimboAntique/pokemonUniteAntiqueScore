@@ -36,7 +36,8 @@ class AntiqueScore:
 
     def get_week_number(self):
         date_data = list(self.data["metaData"].values())[0]["pickRateByWeek"]
-        return int(date_data[-1]["week"].split()[-1]) - 1
+        # print(date_data)
+        return int(date_data[-1]["week"][2:4]) - 1
 
     def get_week_date_range(self):
         date = self.gen_week_date_str()
@@ -82,9 +83,7 @@ class AntiqueScore:
                 continue  # remove unused Pokémon
             pokemon_data = {
                 "name": self.get_pokemon_name(pokemon_id),
-                "chinese_name": AntiqueScoreUtil.pokemon_chinese_name_dict[
-                    self.get_pokemon_name(pokemon_id)
-                ],
+                "chinese_name": AntiqueScoreUtil.unite_data[self.get_pokemon_name(pokemon_id)]["chinese"],
                 "pick_rate": float(self.get_pick_rate(pokemon_id)),
                 "bias_win_rate": float(self.get_bias_win_rate(pokemon_id)),
                 "antique_score": self.get_antique_score(pokemon_id),

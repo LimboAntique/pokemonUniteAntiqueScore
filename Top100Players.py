@@ -68,7 +68,7 @@ class Top100Players:
             if not battle_sets:
                 continue
             battle_set = "_".join(battle_sets)
-            pokemon_name = AntiqueScoreUtil.unite_data[match["currentPlayer"]["playedPokemonImg"]]["english"]
+            pokemon_name = AntiqueScoreUtil.unite_data[match["currentPlayer"]["playedPokemonImg"]]["chinese"]
             if pokemon_name not in self.daily_data["pokemons"]:
                 self.daily_data["pokemons"][pokemon_name] = {
                     "win": 0,
@@ -343,7 +343,7 @@ class Top100Players:
                 writer.writerow(
                     [
                         index,
-                        AntiqueScoreUtil.unite_data[pokemon]["chinese"],
+                        pokemon,
                         "\t\t-- 使用人数 --",
                         "- 使用率 -",
                         "- 胜场数 -",
@@ -403,10 +403,9 @@ class Top100Players:
                     for skill in battle_set.split("_"):
                         if not skill:
                             continue
-                        skill_chinese_name = AntiqueScoreUtil.unite_data[skill]["chinese"]
-                        if len(skill_chinese_name) < 3:
-                            skill_chinese_name += "\t"
-                        sets.append(skill_chinese_name)
+                        if len(skill) < 3:
+                            skill += "\t"
+                        sets.append(skill)
                     writer.writerow(
                         [
                             "",
@@ -439,7 +438,7 @@ class Top100Players:
                         continue
                     items = []
                     for item in battle_item.split("_"):
-                        items.append(AntiqueScoreUtil.item_name_dict[item])
+                        items.append(item)
                     writer.writerow(
                         [
                             "",
@@ -529,25 +528,14 @@ class Top100Players:
                     if data["pokemons"][pokemon]["use_rate"] != use_rate:
                         index = _index
                     use_rate = data["pokemons"][pokemon]["use_rate"]
+                    last_week_use_rate = last_week_data["pokemons"].get(pokemon, {"use_rate": use_rate})["use_rate"]
                     writer.writerow(
                         {
                             "排名": index,
-                            "名称": AntiqueScoreUtil.unite_data[pokemon]["chinese"],
+                            "名称": pokemon,
                             "使用人数": len(data["pokemons"][pokemon]["players"]),
                             "使用率": str(round(100 * use_rate, 2)) + "%",
-                            "使用率变化": str(
-                                round(
-                                    100
-                                    * (
-                                            use_rate
-                                            - last_week_data["pokemons"].get(
-                                        pokemon, {"use_rate": use_rate}
-                                    )["use_rate"]
-                                    ),
-                                    2,
-                                )
-                            )
-                                          + "%",
+                            "使用率变化": str(round(100 * (use_rate - last_week_use_rate), 2)) + "%",
                             "胜场数": data["pokemons"][pokemon]["win"],
                             "胜率": str(
                                 round(100 * data["pokemons"][pokemon]["win_rate"], 2)
@@ -569,7 +557,7 @@ class Top100Players:
                         voice_file.write("并列")
                     voice_file.write(
                         "第{0}名, {1}。\n".format(
-                            index, AntiqueScoreUtil.unite_data[pokemon]["chinese"]
+                            index, pokemon
                         )
                     )
                     voice_file.write(
@@ -577,16 +565,8 @@ class Top100Players:
                             str(round(100 * use_rate, 2)),
                         )
                     )
-                    change = round(
-                        100
-                        * (
-                                use_rate
-                                - last_week_data["pokemons"].get(
-                            pokemon, {"use_rate": use_rate}
-                        )["use_rate"]
-                        ),
-                        2,
-                    )
+                    last_week_use_rate = last_week_data["pokemons"].get(pokemon, {"use_rate": use_rate})["use_rate"]
+                    change = round(100 * (use_rate - last_week_use_rate), 2)
                     if change > 0:
                         voice_file.write("上升" + str(change) + "%")
                     elif change < 0:
@@ -647,7 +627,7 @@ class Top100Players:
             ):
                 if "Name" not in pokemon:
                     continue
-                pokemon_name = pokemon["Name"]
+                pokemon_name = AntiqueScoreUtil.unite_data[pokemon["Name"]]["chinese"]
                 items_string = AntiqueScoreUtil.get_pokemon_items_string(
                     pokemon["Items"]
                 )

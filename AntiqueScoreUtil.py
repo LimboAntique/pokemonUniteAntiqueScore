@@ -24,30 +24,6 @@ for load in mongo_col.find({"unite_api_id": {'$exists': 1}}):
 
 player_dump_data_path = "../player_dump_data/"
 
-item_name_dict = {
-    "Eos2": "救援屏障",
-    "FocusBand": "气势头带",
-    "MuscleBand": "力量头带",
-    "AssaultVest": "突击背心",
-    "ChoiceSpecs": "讲究眼镜",
-    "Eos1": "能量增幅器",
-    "WiseGlasses": "博识眼镜",
-    "Eos3": "得分护盾",
-    "Eos5": "猛攻哑铃",
-    "RazorClaw": "锐利之爪",
-    "ScopeLens": "焦点镜",
-    "WeaknessPolicy": "弱点保险",
-    "ExpShare": "学习装置",
-    "Eos6": "进击眼镜",
-    "ShellBell": "贝壳之铃",
-    "FloatStone": "轻石" + "\t",
-    "Eos4": "亿奥斯饼干",
-    "RockyHelmet": "凸凸头盔",
-    "Leftovers": "吃剩的东西",
-    "ComboScarf": "连打围巾",
-    "CureCrown": "治愈王冠",
-}
-
 url_base = "https://uniteapi.dev/"
 header = {"User-Agent":
               "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
@@ -185,9 +161,9 @@ def get_match_battle_set(match, player_uid):
         print("Error: unable to get name for " + skill1_id + " or " + skill2_id)
         return None
     return [
-        skill1_load["english"],
-        skill2_load["english"],
-        target_data["usedBattleItem"].split("_")[-1],
+        skill1_load["chinese"],
+        skill2_load["chinese"],
+        unite_data[target_data["usedBattleItem"]]["chinese"]
     ]
 
 
@@ -196,7 +172,7 @@ def get_pokemon_items_string(items):
         return ""
     res = []
     for item in items:
-        item_name = item["Image"].split("_")[-1]
+        item_name = unite_data[item["Image"]]["chinese"]
         res.append(item_name)
     return "_".join(sorted(res))
 
