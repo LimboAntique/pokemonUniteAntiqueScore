@@ -6,6 +6,7 @@ from pymongo import MongoClient
 import os.path
 import time
 import urllib
+import re
 
 import requests
 from Crypto.Cipher import AES
@@ -70,9 +71,12 @@ def dump_crypto_url(driver, url) -> dict:
 
 
 def get_one_player_data(
-        driver, name, force_fetch=False, cache_days=6, retry=1, should_print=True
+        driver, name:str, force_fetch=False, cache_days=6, retry=1, should_print=True
 ):
     create_player_dump_data_path_if_needed()
+    name_special_match = re.match(r'^<\w+?>.*</\w+?>$', name, re.I)
+    if name_special_match:
+        name = name[3: -4]
     file_path_name = player_dump_data_path + str(name) + ".json"
     player_data = {}
     current_time = time.time()
