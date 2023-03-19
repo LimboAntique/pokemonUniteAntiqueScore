@@ -27,7 +27,9 @@ player_dump_data_path = "../player_dump_data/"
 
 url_base = "https://uniteapi.dev/"
 header = {"User-Agent":
-              "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
+              "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+          "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+          "cookie": '''_pbjs_userid_consent_data=3524755945110770; cnx_userId=bb59f21ed2074949ba224fd66c89c34c; _pubcid=96403697-15f1-4eff-895f-839506911698; _cc_id=5b63e4753ea2ac5d2b228e89d284b1ad; CookieConsent={stamp:'FzinIX/o72k1/r3jCPddUZijVyMJHusM7sQPef39uS1yvfWxZAZWNQ==',necessary:true,preferences:true,statistics:true,marketing:true,ver:1,utc:1668311484789,region:'us-06'}; __gads=ID=9ed613288bf8047a-22de14ea4fb4001b:T=1668208927:S=ALNI_Mb-k_EhOfOua2iOykVUJDYYG0HDZA; _lr_env_src_ats=false; FCNEC=[["AKsRol9KE3JpvhnVQU39Sv6czwWc9PldLgido92i6WOa-mrqAQvefRq_n1bX7VB9SxX6o8d72RdHnnRrM2AF3Bz9SAQT8GBhfQsf9qNh_A-miw6eetwnU9yS0Nc36pNj7r7PF-JpLKhTe44asF1vXw3u0F_NreBTcA=="],null,[]]; _au_1d=AU1D-0100-001677271293-D0W93QRG-NFRN; pbjs-unifiedid={"TDID":"57796944-0e13-4ed3-860d-0e201355dd0e","TDID_LOOKUP":"TRUE","TDID_CREATED_AT":"2023-01-27T21:25:18"}; ntv_as_us_privacy=1YNY; panoramaIdType=panoIndiv; panoramaId_expiry=1679422325681; panoramaId=2ff6a3a5960af3d18c864e2176ac16d53938a9954d0558f049ba3fdb00563a57; __Host-next-auth.csrf-token=9672ea779fe9d926c0927014ba9a7d8f9e2722a50274c525a67999714df8c9ae|c3ca00483a34a7e5b6cfe1e8e5dff9de799b140a3ff8c6b6bf044ed7566e917a; __Secure-next-auth.callback-url=https://uniteapi.dev; ntvSession={}; ezux_ifep_373621=true; ezouspvh=600; logglytrackingsession=fd69664d-df9a-4c8a-89ed-ac0dc02f57cf; ezosuibasgeneris-1=48841980-4026-4fd6-7f0d-3d4cf2dd6585; cf_chl_2=acd9147f25430db; cf_clearance=JY7lda1Kkw9r0aSbEu3A996pQmY1IBefmv8dJlYaUeU-1679183144-0-160; ezoadgid_373621=-1; ezoref_373621=uniteapi.dev; ezoab_373621=mod1-c; ezovid_373621=982962007; lp_373621=https://uniteapi.dev/p/DoL・古董; ezovuuid_373621=832e51c8-8ef4-477b-6668-6069361541fd; _au_last_seen_pixels=eyJhcG4iOjE2NzkxODMxNTUsInR0ZCI6MTY3OTE4MzE1NSwicHViIjoxNjc5MTgzMTU1LCJydWIiOjE2NzkxODMxNTUsInRhcGFkIjoxNjc5MTgzMTU1LCJhZHgiOjE2NzkxODMxNTUsImdvbyI6MTY3OTE4MzE1NSwibWVkaWFtYXRoIjoxNjc5MDI2MTYxLCJwcG50IjoxNjc5MDI2MTYxLCJpbXByIjoxNjc5MTgzMTU1LCJhZG8iOjE2NzkxODMxNTUsIm9wZW54IjoxNjc5MDI2MTYxLCJzb24iOjE2NzkxODMxNTUsInRhYm9vbGEiOjE2NzkwMjYxNjEsInVucnVseSI6MTY3OTAyNjE2MSwiYmVlcyI6MTY3OTAyNTY1Miwic21hcnQiOjE2NzkwMjYxNjF9; _gid=GA1.2.1419690244.1679183156; __gpi=UID=000008a54d75306f:T=1668208927:RT=1679183155:S=ALNI_MbpIZakKL6RBmZPqQUExKtDCAp88A; _ga=GA1.1.1146358985.1668208928; ezux_et_373621=1062; ezouspvv=7540; ezouspva=25; _ga_YJKKTSBB0Y=GS1.1.1679183155.145.1.1679183282.0.0.0; ezepvv=0; ezovuuidtime_373621=1679183290; active_template::373621=pub_site.1679183290; ezopvc_373621=6; ezux_lpl_373621=1679183290538|43d47d2f-4006-4dcb-7cc7-7394e4590138|false; cto_bundle=Gpv8yl8yZHcwY2NlV0IlMkJhTm9UTHMlMkZOMU41REVaeUZVazFyaFYxMFdpMFZoU3RxUmdQZDE0aUdEcnRIMEZicVVsakY4ZXAzdmpKdFI4UTZpcFpZOURmVU92Nlp3WDJZTk01UVhjaG45OHFOYTVKakU3QWtXT0JVdDg1UFg5NXl6Wm1CVlFjJTJCR3kwYzUlMkZyanV4Zzh4VEdsVU14cU85Wk5SNTEzWVl5MFNJd1glMkJ2WXI5ZlhlWTVnUzBwODNDNkFCQUVNYlNYdyUyQlFZcURKeTVwYUhMdnpUbEtSVDhBJTNEJTNE; cto_bidid=Gpv8yl8yZHcwY2NlV0IlMkJhTm9UTHMlMkZOMU41REVaeUZVazFyaFYxMFdpMFZoU3RxUmdQZDE0aUdEcnRIMEZicVVsakY4ZXAzdmpKdFI4UTZpcFpZOURmVU92Nlp3WDJZTk01UVhjaG45OHFOYTVKakU3QWtXT0JVdDg1UFg5NXl6Wm1CVlFjJTJCR3kwYzUlMkZyanV4Zzh4VEdsVU14cU85Wk5SNTEzWVl5MFNJd1glMkJ2WXI5ZlhlWTVnUzBwODNDNkFCQUVNYlNYdyUyQlFZcURKeTVwYUhMdnpUbEtSVDhBJTNEJTNE; ezux_tos_373621=27086''',
           }
 
 
@@ -53,6 +55,7 @@ def dump_url(driver, url):
         response = driver.get(url)
     else:
         response = requests.get(url)
+        print(response)
     if response:
         return BeautifulSoup(response.text, "html.parser")
     return None
@@ -112,6 +115,9 @@ def get_one_player_data(
             time.sleep(5)
             continue
 
+        with open(file_path_name, "w") as outfile:
+            json.dump(player_data, outfile)
+        file_path_name = player_dump_data_path + str(name) + ".json"
         with open(file_path_name, "w") as outfile:
             json.dump(player_data, outfile)
         return player_data

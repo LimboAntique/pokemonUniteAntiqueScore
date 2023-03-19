@@ -27,7 +27,7 @@ class AntiqueDriver:
         chrome_options.add_argument("--user-data-dir=selenium")
         self.driver = uc.Chrome(use_subprocess=True, options=chrome_options)
         self.driver.get(AntiqueScoreUtil.url_base)
-        WebDriverWait(self.driver, 10).until(EC.title_contains("Unite Api"))
+        WebDriverWait(self.driver, 10).until(EC.title_contains("UniteApi"))
 
     def updateSession(self):
         if self.session:
