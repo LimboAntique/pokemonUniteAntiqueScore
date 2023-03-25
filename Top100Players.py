@@ -31,6 +31,7 @@ class Top100Players:
         # soup = BeautifulSoup(response.text, "html.parser")
         count = 0
         for player in response_soup.select("#content-container > div > div > div > div > div > p"):
+            # print(player.get_text())
             self.top100_players.append(player.get_text())
             count += 1
             if count >= 100:
@@ -128,6 +129,7 @@ class Top100Players:
             return
         self.get_current_top_100_players()
         if len(self.top100_players) < 100:
+            # print(len(self.top100_players))
             print("fail to get top 100 players list")
             return
         index = 1
