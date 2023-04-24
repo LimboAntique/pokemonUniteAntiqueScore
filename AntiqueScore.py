@@ -17,10 +17,11 @@ path = "./dump_data/"
 
 class AntiqueScore:
     def __init__(self, driver):
-        url = AntiqueScoreUtil.url_base + "meta/"
+        url = AntiqueScoreUtil.url_base + "meta"
         self.driver = driver
         self.data = AntiqueScoreUtil.dump_crypto_url(self.driver, url)
-        self.gen_pokemon_list()
+        print("666", self.data)
+        # self.gen_pokemon_list()
         # print(self.data)
         self.antique_score_data = {}
 
