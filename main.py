@@ -38,9 +38,9 @@ def dump_top100_players_past_x_days_summary(days, antique_driver, new_mode):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "-r", "--ranking-index", help="Get ranking index", action="store_true"
-    )
+    # parser.add_argument(
+    #     "-r", "--ranking-index", help="Get ranking index", action="store_true"
+    # )
     parser.add_argument(
         "-t",
         "--top-100-stats",
@@ -76,9 +76,9 @@ if __name__ == "__main__":
     driver = None
     if args.using_driver:
         driver = AntiqueDriver()
-    if args.ranking_index:
-        generate_antique_score(driver)
-    elif args.top_100_stats:
+    # if args.ranking_index:
+    #     generate_antique_score(driver)
+    if args.top_100_stats:
         if args.days >= 1:
             dump_top100_players_past_x_days_summary(args.days, driver, args.new_mode)
         else:

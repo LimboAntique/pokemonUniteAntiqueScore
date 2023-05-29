@@ -62,12 +62,10 @@ def dump_url(driver, url):
 
 def dump_crypto_url(driver, url) -> dict:
     response_soup = dump_url(driver, url)
-    print(response_soup)
     if response_soup:
         encoded_data = json.loads(response_soup.body.find("script", {"id": "__NEXT_DATA__"}).string)["props"][
             "pageProps"
         ]["a"]
-        print(encoded_data)
         # with open('temp.txt', "w") as filea:
         #     filea.write(str(encoded_data))
         return aes256_decode(encoded_data)
@@ -131,9 +129,9 @@ def get_past_x_day_start_epoch(x=0):
 
 def aes256_decode(encoded_data):
     ken_len = 21
-    print("111", encoded_data[-ken_len:], encoded_data[-ken_len:].encode("utf-8"))
+    # print("111", encoded_data[-ken_len:], encoded_data[-ken_len:].encode("utf-8"))
     key = hashlib.sha256(encoded_data[-ken_len:].encode("utf-8")).digest()
-    print("key", key)
+    # print("key", key)
     b64decoded_data = base64.b64decode(encoded_data[:-ken_len])
     cipher = AES.new(
         key,

@@ -30,7 +30,6 @@ class Top100Players:
         # response = Driver.get(Driver.url_base + "rankings")
         # soup = BeautifulSoup(response.text, "html.parser")
         count = 0
-        print(response_soup.select("#content-container"))
         for player in response_soup.select("#content-container > div > div > div > div > div > p"):
             # print(player.get_text())
             self.top100_players.append(player.get_text())
@@ -206,7 +205,7 @@ class Top100Players:
                 else:
                     file_path_name = path + str(AntiqueScoreUtil.get_past_x_day_start_epoch(0)) + "_new_mode.json"
                 if not os.path.exists(file_path_name):
-                    print(file_path_name, d)
+                    # print(file_path_name, d)
                     if d == 0:
                         self.get_yesterday_all_players_statics(new_mode)
                     else:

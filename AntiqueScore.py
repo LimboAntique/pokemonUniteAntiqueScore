@@ -20,9 +20,6 @@ class AntiqueScore:
         url = AntiqueScoreUtil.url_base + "meta"
         self.driver = driver
         self.data = AntiqueScoreUtil.dump_crypto_url(self.driver, url)
-        print("666", self.data)
-        # self.gen_pokemon_list()
-        # print(self.data)
         self.antique_score_data = {}
 
     def get_fetched_data(self):
