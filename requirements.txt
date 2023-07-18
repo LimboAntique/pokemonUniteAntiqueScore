@@ -3,7 +3,7 @@ bs4~=0.0.1
 crypto~=1.4.1
 pycryptodome==3.18.0
 requests==2.31.0
-selenium==4.9.1
-undetected_chromedriver==3.4.6
+selenium==4.10.0
+undetected_chromedriver==3.5.0
 certifi==2023.5.7
-pymongo~=4.3.3
+pymongo==4.4.0

@@ -24,7 +24,7 @@ class AntiqueDriver:
         if self.driver is not None:
             self.quitDriver()
         chrome_options = Options()
-        chrome_options.add_argument("--user-data-dir=selenium")
+        chrome_options.add_argument("--user-data-dir=underwear_uc")
         chrome_options.add_argument("--headless")
         chrome_options.add_argument("--disable-extensions")
         chrome_options.add_argument("--disable-browser-side-navigation")
@@ -32,9 +32,10 @@ class AntiqueDriver:
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-infobars")
         chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--no-sandbox")
         self.driver = uc.Chrome(use_subprocess=True, options=chrome_options)
         self.driver.get(AntiqueScoreUtil.url_base)
-        WebDriverWait(self.driver, 10).until(EC.title_contains("UniteApi"))
+        WebDriverWait(self.driver, 30).until(EC.title_contains("Homepage"))
 
     def updateSession(self):
         if self.session:
