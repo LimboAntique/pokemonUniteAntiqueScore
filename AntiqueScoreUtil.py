@@ -118,8 +118,11 @@ def get_one_player_data(
         with open(file_path_name, "w") as outfile:
             json.dump(player_data, outfile)
         file_path_name = player_dump_data_path + str(clean_name) + ".json"
-        with open(file_path_name, "w") as outfile:
-            json.dump(player_data, outfile)
+        try:
+            with open(file_path_name, "w") as outfile:
+                json.dump(player_data, outfile)
+        except:
+            print("unable to dump {0}".format(str(clean_name)))
         return player_data
 
 
