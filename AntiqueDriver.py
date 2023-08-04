@@ -35,11 +35,14 @@ class AntiqueDriver:
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-popup-blocking")
-        self.driver = uc.Chrome(options=chrome_options)
-        self.driver.delete_all_cookies()
-        self.driver.execute_script("""window.open('{0}', "_blank");""".format("https://uniteapi.dev/"))
-        sleep(15)
-        self.driver.switch_to.window(self.driver.window_handles[1])
+        # self.driver = uc.Chrome(options=chrome_options)
+        # self.driver.delete_all_cookies()
+        # self.driver.execute_script("""window.open('{0}', "_blank");""".format("https://uniteapi.dev/"))
+        # sleep(15)
+        # self.driver.switch_to.window(self.driver.window_handles[1])
+        self.driver = uc.Chrome(use_subprocess=True, options=chrome_options)
+        self.driver.get(AntiqueScoreUtil.url_base)
+        WebDriverWait(self.driver, 20).until(EC.title_contains("Homepage"))
 
     def updateSession(self):
         if self.session:
