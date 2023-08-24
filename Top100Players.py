@@ -629,6 +629,8 @@ class Top100Players:
             ):
                 if "Name" not in pokemon:
                     continue
+                # if pokemon["Name"] == "Mewtwo":
+                #     pokemon["Name"] = "MewtwoX"
                 pokemon_name = AntiqueScoreUtil.unite_data[pokemon["Name"]]["chinese"]
                 items_string = AntiqueScoreUtil.get_pokemon_items_string(
                     pokemon["Items"]

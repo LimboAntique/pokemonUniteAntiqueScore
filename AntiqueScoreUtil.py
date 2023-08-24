@@ -13,7 +13,7 @@ from Crypto.Cipher import AES
 from Crypto.Util import Counter
 from Crypto.Util.number import bytes_to_long
 from bs4 import BeautifulSoup
-from halo import Halo
+# from halo import Halo
 
 mongo_client = MongoClient("mongodb+srv://BlakeXu:nljd1SBaKAIVfDH9@antique.uq5zmrd.mongodb.net/?retryWrites=true&w=majority", tlsCAFile=certifi.where())
 mongo_db = mongo_client.get_database("underwear_bot")
@@ -94,10 +94,11 @@ def get_one_player_data(
                     >= cache_days
             ):
                 # re-dump data if old data older than 7 days
-                with Halo(text="dumping data for " + clean_name, spinner="dots"):
-                    url = url_base + "p/" + urllib.parse.quote(name, safe='<>')
-                    player_data = dump_crypto_url(driver, url)
-                    player_data["dump_time"] = get_past_x_day_start_epoch(0)
+                # with Halo(text="dumping data for " + clean_name, spinner="dots"):
+                url = url_base + "p/" + urllib.parse.quote(name, safe='<>')
+                player_data = dump_crypto_url(driver, url)
+                player_data["dump_time"] = get_past_x_day_start_epoch(0)
+                my_print("using new data for " + clean_name, should_print)
             else:
                 my_print("using old data for " + clean_name, should_print)
             if "player" not in player_data:
