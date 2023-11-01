@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 import AntiqueScoreUtil
-
+DETECTION_KEY = "UniteApi"
 
 # url_base = "https://uniteapi.dev/"
 # chrome_options = Options()
@@ -27,7 +27,7 @@ class AntiqueDriver:
             self.quitDriver()
         chrome_options = Options()
         chrome_options.add_argument("--user-data-dir=underwear_uc")
-        # # chrome_options.add_argument("--headless")
+        # chrome_options.add_argument("--headless")
         chrome_options.add_argument("--disable-extensions")
         chrome_options.add_argument("--disable-browser-side-navigation")
         chrome_options.add_argument("--disable-web-security")
@@ -41,6 +41,10 @@ class AntiqueDriver:
         self.driver.execute_script("""window.open('{0}', "_blank");""".format("https://uniteapi.dev/"))
         sleep(15)
         self.driver.switch_to.window(self.driver.window_handles[1])
+
+        # self.driver = uc.Chrome(options=chrome_options)
+        # self.driver.get("https://uniteapi.dev/")
+        # WebDriverWait(self.driver, 20).until(EC.title_contains(DETECTION_KEY))
 
     def updateSession(self):
         if self.session:
