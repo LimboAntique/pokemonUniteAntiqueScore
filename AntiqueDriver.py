@@ -34,10 +34,15 @@ class AntiqueDriver:
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-infobars")
         chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument('--enable-javascript')
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-popup-blocking")
+        user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15'
+        chrome_options.add_argument('User-Agent={0}'.format(user_agent))
+        chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+        chrome_options.add_experimental_option('useAutomationExtension', True)
 
-        self.driver = uc.Chrome(options=chrome_options)
+        self.driver = uc.Chrome(chrome_options = chrome_options, service_args = ['--quiet'])
         self.driver.execute_script("""window.open('{0}', "_blank");""".format("https://uniteapi.dev/"))
         sleep(15)
         self.driver.switch_to.window(self.driver.window_handles[1])
