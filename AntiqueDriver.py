@@ -7,7 +7,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 import AntiqueScoreUtil
+
 DETECTION_KEY = "UniteApi"
+
 
 # url_base = "https://uniteapi.dev/"
 # chrome_options = Options()
@@ -42,9 +44,9 @@ class AntiqueDriver:
         chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
         chrome_options.add_experimental_option('useAutomationExtension', True)
 
-        self.driver = uc.Chrome(chrome_options = chrome_options, service_args = ['--quiet'])
+        self.driver = uc.Chrome(use_subprocess=False, options=chrome_options, service_args=['--quiet'])
         self.driver.execute_script("""window.open('{0}', "_blank");""".format("https://uniteapi.dev/"))
-        sleep(15)
+        sleep(5)
         self.driver.switch_to.window(self.driver.window_handles[1])
 
         # self.driver = uc.Chrome(options=chrome_options)
