@@ -6,8 +6,6 @@ from time import sleep
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-import AntiqueScoreUtil
-
 DETECTION_KEY = "UniteApi"
 
 
@@ -39,19 +37,12 @@ class AntiqueDriver:
         chrome_options.add_argument('--enable-javascript')
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-popup-blocking")
-        user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15'
-        chrome_options.add_argument('User-Agent={0}'.format(user_agent))
-        chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
-        chrome_options.add_experimental_option('useAutomationExtension', True)
-
         self.driver = uc.Chrome(use_subprocess=False, options=chrome_options, service_args=['--quiet'])
+        self.driver.get("https://uniteapi.dev/")
         self.driver.execute_script("""window.open('{0}', "_blank");""".format("https://uniteapi.dev/"))
         sleep(5)
-        self.driver.switch_to.window(self.driver.window_handles[1])
-
-        # self.driver = uc.Chrome(options=chrome_options)
-        # self.driver.get("https://uniteapi.dev/")
-        # WebDriverWait(self.driver, 20).until(EC.title_contains(DETECTION_KEY))
+        self.driver.refresh()
+        WebDriverWait(self.driver, 30).until(EC.title_contains(DETECTION_KEY))
 
     def updateSession(self):
         if self.session:
