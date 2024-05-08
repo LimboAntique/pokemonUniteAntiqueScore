@@ -40,9 +40,9 @@ class AntiqueScore:
     def get_week_date_range(self):
         date = self.gen_week_date_str()
         return (
-                datetime.datetime.strptime(date + "-1", "%Y-W%W-%w").strftime("%Y.%m.%d")
+                datetime.datetime.strptime(date + "-2", "%Y-W%W-%w").strftime("%Y.%m.%d")
                 + "-"
-                + datetime.datetime.strptime(date + "-0", "%Y-W%W-%w").strftime("%Y.%m.%d")
+                + datetime.datetime.strptime(date + "-1", "%Y-W%W-%w").strftime("%Y.%m.%d")
         )
 
     def get_pokemon_name(self, pokemon_id):
