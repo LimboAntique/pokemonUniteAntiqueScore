@@ -30,7 +30,8 @@ class Top100Players:
         # response = Driver.get(Driver.url_base + "rankings")
         # soup = BeautifulSoup(response.text, "html.parser")
         count = 0
-        for player in response_soup.select("#__next > div > div > div > div > div > div > p"):
+        # print(response_soup.select("#__next > div > main > div > div > div > div > div > div> p"))
+        for player in response_soup.select("#__next > div > main > div > div > div > div > div > div> p"):
             print(player.get_text())
             self.top100_players.append(player.get_text())
             count += 1
