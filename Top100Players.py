@@ -39,7 +39,7 @@ class Top100Players:
                 break
 
     def get_yesterday_one_player_static(self, name, new_mode):
-        data = AntiqueScoreUtil.get_one_player_data(self.driver, name, cache_days=1)
+        data = AntiqueScoreUtil.get_one_player_data(self.driver, name, cache_days=2)
         if not data or "player" not in data:
             return {}
         name = data["player"]["profile"]["userShort"]
