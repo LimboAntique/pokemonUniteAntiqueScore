@@ -750,5 +750,3 @@ class Top100Players:
             print("items_recommend.csv is generated")
         except Exception as e:
             print("items_recommend.csv failed due to " + e.message)
-
-
