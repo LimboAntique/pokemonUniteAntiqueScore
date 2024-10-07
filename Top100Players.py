@@ -39,7 +39,7 @@ class Top100Players:
                 break
 
     def get_yesterday_one_player_static(self, name, new_mode):
-        data = AntiqueScoreUtil.get_one_player_data(self.driver, name, cache_days=2)
+        data = AntiqueScoreUtil.get_one_player_data(self.driver, name, cache_days=1)
         if not data or "player" not in data:
             return {}
         name = data["player"]["profile"]["userShort"]
@@ -630,9 +630,7 @@ class Top100Players:
             ):
                 if "Name" not in pokemon:
                     continue
-                if pokemon["Name"] == "Mewtwo":
-                    pokemon["Name"] = "MewtwoX"
-                pokemon_name = AntiqueScoreUtil.unite_data[pokemon["Name"]]["chinese"]
+                pokemon_name = AntiqueScoreUtil.unite_data[pokemon["Image"]]["chinese"]
                 items_string = AntiqueScoreUtil.get_pokemon_items_string(
                     pokemon["Items"]
                 )

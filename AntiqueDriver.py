@@ -39,10 +39,11 @@ class AntiqueDriver:
         chrome_options.add_argument("--disable-popup-blocking")
         self.driver = uc.Chrome(use_subprocess=False, options=chrome_options, service_args=['--quiet'])
         self.driver.get("https://uniteapi.dev/")
-        self.driver.execute_script("""window.open('{0}', "_blank");""".format("https://uniteapi.dev/"))
-        sleep(5)
-        self.driver.refresh()
-        WebDriverWait(self.driver, 30).until(EC.title_contains(DETECTION_KEY))
+        # self.driver.execute_script("""window.open('{0}', "_blank");""".format("https://uniteapi.dev/"))
+        sleep(2)
+        # self.driver.refresh()
+        # WebDriverWait(self.driver, 30).until(EC.title_contains(DETECTION_KEY))
+        WebDriverWait(self.driver, 5)
 
     def updateSession(self):
         if self.session:
