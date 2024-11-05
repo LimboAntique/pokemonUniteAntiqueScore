@@ -159,6 +159,8 @@ class Top100Players:
     @staticmethod
     def _get_player_name(driver, short_name):
         player_data = AntiqueScoreUtil.get_one_player_data(driver, short_name)
+        if "player" not in player_data:
+            return short_name
         return player_data["player"]["profile"]["playerName"]
 
     def get_past_x_days_summary(self, start=7, end=0, force_fetch=False, new_mode=False):
@@ -214,7 +216,6 @@ class Top100Players:
                 with open(file_path_name, "r") as readfile:
                     data = AntiqueScoreUtil.merge_2_dicts(data, json.load(readfile))
                 data = Top100Players.add_win_rate(data)
-
                 for pokemon in data["pokemons"]:
                     battle_items = {}
                     for player in data["pokemons"][pokemon]["players"]:
@@ -325,7 +326,6 @@ class Top100Players:
                         ),
                     )
                 )
-            # pprint(temp)
             with open(json_file_name, "w") as outfile:
                 json.dump(data, outfile)
             print("dumped json file: " + json_file_name)
@@ -628,7 +628,7 @@ class Top100Players:
                     or int(pokemon["statistics"]["SeasonBattles"])
                     >= season_battle_threshold
             ):
-                if "Name" not in pokemon:
+                if "Image" not in pokemon:
                     continue
                 pokemon_name = AntiqueScoreUtil.unite_data[pokemon["Image"]]["chinese"]
                 items_string = AntiqueScoreUtil.get_pokemon_items_string(
