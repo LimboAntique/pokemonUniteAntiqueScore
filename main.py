@@ -33,7 +33,7 @@ def dump_yesterday_top100_players(antique_driver):
 
 def dump_top100_players_past_x_days_summary(days, antique_driver, new_mode):
     top_100_players = Top100Players(antique_driver)
-    top_100_players.get_past_x_days_summary(days, new_mode=new_mode)
+    top_100_players.get_past_x_days_summary(days, 0, new_mode=new_mode)
 
 
 if __name__ == "__main__":
