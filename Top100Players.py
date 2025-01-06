@@ -32,9 +32,15 @@ class Top100Players:
         count = 0
         # print(response_soup.select("#__next > div > main > div > div > div > div > div > div> p"))
         for player in response_soup.select("#__next > div > main > div > div > div > div > div > div> p"):
-            print(player.get_text())
-            self.top100_players.append(player.get_text())
             count += 1
+            # if count == 100:
+            #     self.top100_players.append("1v1・Antique")
+            #     print("1v1・Antique")
+            # else:
+            self.top100_players.append(player.get_text())
+            print(player.get_text())
+            if count == 100:
+                break
             if count >= 100:
                 break
 
@@ -497,12 +503,12 @@ class Top100Players:
             last_week_file_name = (
                     time.strftime(
                         "%Y-%b-%d",
-                        time.gmtime(AntiqueScoreUtil.get_past_x_day_start_epoch(7 + 7)),
+                        time.gmtime(AntiqueScoreUtil.get_past_x_day_start_epoch(start + 7)),
                     )
                     + "_"
                     + time.strftime(
                 "%Y-%b-%d",
-                time.gmtime(AntiqueScoreUtil.get_past_x_day_start_epoch(1 + 7)),
+                time.gmtime(AntiqueScoreUtil.get_past_x_day_start_epoch(end + 1 + 7)),
             )
             )
         else:
