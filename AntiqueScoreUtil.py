@@ -66,8 +66,8 @@ def dump_crypto_url(driver, url) -> dict:
         encoded_data = json.loads(response_soup.body.find("script", {"id": "__NEXT_DATA__"}).string)["props"][
             "pageProps"
         ]["a"]
-        # with open('temp.txt', "w") as filea:
-        #     filea.write(str(encoded_data))
+        # with open('temp.txt', "w") as f:
+        #     f.write(str(encoded_data))
         return aes256_decode(encoded_data)
     return {}
 
