@@ -5,8 +5,12 @@ from selenium import webdriver
 from time import sleep
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+
 
 DETECTION_KEY = "UniteApi"
+DATA_DIR = "underwear_uc"
+url_base = "https://uniteapi.dev/"
 
 
 # url_base = "https://uniteapi.dev/"
@@ -25,25 +29,36 @@ class AntiqueDriver:
     def updateDriver(self):
         if self.driver is not None:
             self.quitDriver()
+
         chrome_options = Options()
-        chrome_options.add_argument("--user-data-dir=underwear_uc")
+        chrome_options.add_argument("--user-data-dir={0}".format(DATA_DIR))
         # chrome_options.add_argument("--headless")
-        chrome_options.add_argument("--disable-extensions")
-        chrome_options.add_argument("--disable-browser-side-navigation")
-        chrome_options.add_argument("--disable-web-security")
-        chrome_options.add_argument("--disable-dev-shm-usage")
-        chrome_options.add_argument("--disable-infobars")
-        chrome_options.add_argument("--disable-gpu")
-        chrome_options.add_argument('--enable-javascript')
-        chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--disable-popup-blocking")
-        self.driver = uc.Chrome(use_subprocess=False, options=chrome_options, service_args=['--quiet'])
-        self.driver.get("https://uniteapi.dev/")
-        # self.driver.execute_script("""window.open('{0}', "_blank");""".format("https://uniteapi.dev/"))
-        sleep(2)
-        # self.driver.refresh()
-        # WebDriverWait(self.driver, 30).until(EC.title_contains(DETECTION_KEY))
-        WebDriverWait(self.driver, 5)
+        # chrome_options.add_argument("--disable-extensions")
+        # chrome_options.add_argument("--disable-browser-side-navigation")
+        # chrome_options.add_argument("--disable-web-security")
+        # chrome_options.add_argument("--disable-dev-shm-usage")
+        # chrome_options.add_argument("--disable-gpu")
+        # chrome_options.add_argument("--no-sandbox")
+        # chrome_options.add_argument("--disable-popup-blocking")
+
+        self.driver = uc.Chrome(use_subprocess=True, options=chrome_options)
+        self.driver.get(url_base)
+        self.driver.execute_script("""window.open('{0}', "_blank");""".format(url_base))
+        self.driver.implicitly_wait(10)
+        sleep(3)
+        self.driver.refresh()
+        # sleep(5)
+        # self.driver.find_element(By.ID, value="Verify you are human")
+        # WebDriverWait(self.driver, 20).until(EC.frame_to_be_available_and_switch_to_it(
+        #     (By.CSS_SELECTOR, "iframe[title='Homepage | UniteApi']")))
+        # WebDriverWait(self.driver, 20).until(
+        #     EC.element_to_be_clickable((By.CSS_SELECTOR, "label.ctp-checkbox-label"))).click()
+        # sleep(200)
+        # print("ab004",self.driver.window_handles)
+        # self.driver.switch_to.window(self.driver.window_handles[1])
+
+        # self.driver.get(url_base)
+        # WebDriverWait(self.driver, 10).until(EC.title_contains(DETECTION_KEY))
 
     def updateSession(self):
         if self.session:

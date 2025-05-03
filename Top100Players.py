@@ -24,21 +24,21 @@ class Top100Players:
     def get_current_top_100_players(self):
         print("fetching current top 100 players list")
         url = AntiqueScoreUtil.url_base + "rankings/"
-        response_soup = AntiqueScoreUtil.dump_url(self.driver, url)
-        # with open('temp.txt', "w") as filea:
-        #     filea.write(str(response_soup.select("#content-container > div > div > div > div > p")))
-        # response = Driver.get(Driver.url_base + "rankings")
-        # soup = BeautifulSoup(response.text, "html.parser")
+        response = AntiqueScoreUtil.dump_crypto_url(self.driver, url)
+        print("response", response)
+        user_data = response.get('top100', [])
         count = 0
         # print(response_soup.select("#__next > div > main > div > div > div > div > div > div> p"))
-        for player in response_soup.select("#__next > div > main > div > div > div > div > div > div> p"):
+        # response_soup.select("#__next > div > main > div > div > div > div > div > div> p"):
+        for player in user_data:
             count += 1
             # if count == 100:
             #     self.top100_players.append("1v1・Antique")
             #     print("1v1・Antique")
             # else:
-            self.top100_players.append(player.get_text())
-            print(player.get_text())
+            # self.top100_players.append(player.get_text())
+            self.top100_players.append(player['Uid'])
+            print(player['RoleName'])
             if count == 100:
                 break
             if count >= 100:
