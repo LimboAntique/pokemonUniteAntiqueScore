@@ -28,7 +28,6 @@ class AntiqueDriver:
         if self.driver is not None:
             self.quitDriver()
         options = ChromeOptions()
-        options.binary_location = '/snap/bin/chromium'
         options.add_argument(f"--user-data-dir={DATA_DIR}")
         # Use the newer headless mode which is closer to headful behavior
         options.add_argument("--headless=new")
@@ -45,7 +44,7 @@ class AntiqueDriver:
             "AppleWebKit/537.36 (KHTML, like Gecko) "
             "Chrome/136.0.7103.59 Safari/537.36"
         )
-        self.driver = uc.Chrome(options=options)
+        self.driver = uc.Chrome(options=options, use_subprocess=False)
         self.driver.get(url_base)
         self.driver.execute_script("""window.open('{0}', "_blank");""".format(url_base))
         self.driver.implicitly_wait(5)
