@@ -28,6 +28,7 @@ class AntiqueDriver:
         if self.driver is not None:
             self.quitDriver()
         options = ChromeOptions()
+        options.binary_location = '/snap/bin/chromium'
         options.add_argument(f"--user-data-dir={DATA_DIR}")
         # Use the newer headless mode which is closer to headful behavior
         options.add_argument("--headless=new")
