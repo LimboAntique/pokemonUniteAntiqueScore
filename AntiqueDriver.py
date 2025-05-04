@@ -1,12 +1,10 @@
+from time import sleep
+
 import requests
 import undetected_chromedriver as uc
-from selenium.webdriver.chrome.options import Options
-from selenium import webdriver
-from time import sleep
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
-
+from undetected_chromedriver import ChromeOptions
 
 DETECTION_KEY = "UniteApi"
 DATA_DIR = "underwear_uc"
@@ -29,36 +27,30 @@ class AntiqueDriver:
     def updateDriver(self):
         if self.driver is not None:
             self.quitDriver()
-
-        chrome_options = Options()
-        chrome_options.add_argument("--user-data-dir={0}".format(DATA_DIR))
-        # chrome_options.add_argument("--headless")
-        # chrome_options.add_argument("--disable-extensions")
-        # chrome_options.add_argument("--disable-browser-side-navigation")
-        # chrome_options.add_argument("--disable-web-security")
-        # chrome_options.add_argument("--disable-dev-shm-usage")
-        # chrome_options.add_argument("--disable-gpu")
-        # chrome_options.add_argument("--no-sandbox")
-        # chrome_options.add_argument("--disable-popup-blocking")
-
-        self.driver = uc.Chrome(use_subprocess=True, options=chrome_options)
+        options = ChromeOptions()
+        options.add_argument(f"--user-data-dir={DATA_DIR}")
+        # Use the newer headless mode which is closer to headful behavior
+        options.add_argument("--headless=new")
+        # Required for container or root environments
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        # Optional: disable GPU
+        options.add_argument("--disable-gpu")
+        # Allow ChromeDriver to attach
+        options.add_argument("--remote-debugging-port=0")
+        # Set a realistic user agent to avoid detection
+        options.add_argument(
+            "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/136.0.7103.59 Safari/537.36"
+        )
+        self.driver = uc.Chrome(options=options)
         self.driver.get(url_base)
         self.driver.execute_script("""window.open('{0}', "_blank");""".format(url_base))
-        self.driver.implicitly_wait(10)
-        sleep(3)
+        self.driver.implicitly_wait(5)
+        sleep(5)
         self.driver.refresh()
-        # sleep(5)
-        # self.driver.find_element(By.ID, value="Verify you are human")
-        # WebDriverWait(self.driver, 20).until(EC.frame_to_be_available_and_switch_to_it(
-        #     (By.CSS_SELECTOR, "iframe[title='Homepage | UniteApi']")))
-        # WebDriverWait(self.driver, 20).until(
-        #     EC.element_to_be_clickable((By.CSS_SELECTOR, "label.ctp-checkbox-label"))).click()
-        # sleep(200)
-        # print("ab004",self.driver.window_handles)
-        # self.driver.switch_to.window(self.driver.window_handles[1])
-
-        # self.driver.get(url_base)
-        # WebDriverWait(self.driver, 10).until(EC.title_contains(DETECTION_KEY))
+        WebDriverWait(self.driver, 10).until(EC.title_contains(DETECTION_KEY))
 
     def updateSession(self):
         if self.session:
