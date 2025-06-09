@@ -39,14 +39,15 @@ class AntiqueDriver:
         # Allow ChromeDriver to attach
         options.add_argument("--remote-debugging-port=0")
         # Set a realistic user agent to avoid detection
-        options.add_argument(
-            "--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        mac_ua = (
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
             "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/136.0.7103.59 Safari/537.36"
+            "Chrome/137.0.7151.56 Safari/537.36"
         )
+        options.add_argument(f"--user-agent={mac_ua}")
         self.driver = uc.Chrome(options=options, use_subprocess=False)
         self.driver.get(url_base)
-        self.driver.execute_script("""window.open('{0}', "_blank");""".format(url_base))
+        self.driver.execute_script("""window.open('{0}');""".format(url_base))
         self.driver.implicitly_wait(5)
         sleep(5)
         self.driver.refresh()

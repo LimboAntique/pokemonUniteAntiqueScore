@@ -3,7 +3,6 @@ bs4>=0.0.2
 requests>=2.31.0
 python-dotenv>=1.0.1
 crypto>=1.4.1
-
 aiohttp~=3.10.11
 beautifulsoup4==4.12.3
 certifi==2024.8.30
