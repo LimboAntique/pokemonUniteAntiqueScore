@@ -1,0 +1,7031 @@
+{
+  "pokemons": {
+    "索罗亚克": {
+      "win": 19,
+      "lost": 0,
+      "players": {
+        "14X0FN": {
+          "win": 4,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_出奇一击_万灵药": {
+              "win": 4,
+              "lost": 0
+            }
+          }
+        },
+        "KE7PTPQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "居合劈_出奇一击_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "QKRRHE0": {
+          "win": 3,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_出奇一击_万灵药": {
+              "win": 3,
+              "lost": 0
+            }
+          }
+        },
+        "6P0515": {
+          "win": 4,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_出奇一击_万灵药": {
+              "win": 4,
+              "lost": 0
+            }
+          }
+        },
+        "92HFTG7": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_暗袭要害_万灵药": {
+              "win": 1,
+              "lost": 0
+            },
+            "居合劈_暗袭要害_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_出奇一击_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "54RP3EQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_出奇一击_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "YCT6K2M": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "居合劈_暗袭要害_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "H66PEX5": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_出奇一击_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "PY1RRC9": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "居合劈_出奇一击_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "暗影爪_出奇一击_万灵药": {
+          "win": 14,
+          "lost": 0
+        },
+        "居合劈_出奇一击_万灵药": {
+          "win": 2,
+          "lost": 0
+        },
+        "暗影爪_暗袭要害_万灵药": {
+          "win": 1,
+          "lost": 0
+        },
+        "居合劈_暗袭要害_万灵药": {
+          "win": 2,
+          "lost": 0
+        }
+      }
+    },
+    "水箭龟": {
+      "win": 5,
+      "lost": 4,
+      "players": {
+        "QC6044": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "水炮_高速旋转_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "LL8P2QX": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "水炮_冲浪_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "R22M468": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "水炮_高速旋转_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "1N4C6RT": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "水炮_高速旋转_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "EN7C58P": {
+          "win": 1,
+          "lost": 2,
+          "battle_sets": {
+            "水炮_高速旋转_逃脱按键": {
+              "win": 1,
+              "lost": 2
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "水炮_高速旋转_逃脱按键": {
+          "win": 5,
+          "lost": 3
+        },
+        "水炮_冲浪_逃脱按键": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "火焰鸡": {
+      "win": 29,
+      "lost": 11,
+      "players": {
+        "QC6044": {
+          "win": 4,
+          "lost": 0,
+          "battle_sets": {
+            "火焰拳_真气弹_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            },
+            "过热_火焰踢_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "PR8AM41": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "火焰拳_真气弹_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "QKRRHE0": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "过热_火焰踢_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            },
+            "火焰拳_真气弹_伤药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "79KM109": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "火焰拳_真气弹_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "R22M468": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "火焰拳_真气弹_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "92HFTG7": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "火焰拳_真气弹_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "过热_火焰踢_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "8XATE8": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "火焰拳_真气弹_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "YCT6K2M": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "过热_火焰踢_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "65M5LMX": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "过热_火焰踢_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "MFQLAKQ": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "过热_火焰踢_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "NAMLAA0": {
+          "win": 2,
+          "lost": 1,
+          "battle_sets": {
+            "火焰拳_真气弹_逃脱按键": {
+              "win": 1,
+              "lost": 1
+            },
+            "过热_火焰踢_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "FR223N5": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "过热_火焰踢_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "Q3KF0XR": {
+          "win": 6,
+          "lost": 2,
+          "battle_sets": {
+            "火焰拳_真气弹_逃脱按键": {
+              "win": 3,
+              "lost": 0
+            },
+            "过热_火焰踢_逃脱按键": {
+              "win": 3,
+              "lost": 2
+            }
+          }
+        },
+        "64HFPAG": {
+          "win": 4,
+          "lost": 1,
+          "battle_sets": {
+            "过热_火焰踢_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            },
+            "火焰拳_真气弹_逃脱按键": {
+              "win": 3,
+              "lost": 1
+            }
+          }
+        },
+        "66GFPKK": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "过热_火焰踢_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "过热_火焰踢_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "PY1RRC9": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "火焰拳_真气弹_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "H1KC46F": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "过热_火焰踢_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            },
+            "火焰拳_真气弹_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "AG15T5R": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "过热_火焰踢_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "XRKA6CM": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "火焰拳_真气弹_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "火焰拳_真气弹_逃脱按键": {
+          "win": 15,
+          "lost": 4
+        },
+        "过热_火焰踢_逃脱按键": {
+          "win": 14,
+          "lost": 5
+        },
+        "火焰拳_真气弹_伤药": {
+          "win": 0,
+          "lost": 1
+        },
+        "过热_火焰踢_万灵药": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "超梦Y": {
+      "win": 15,
+      "lost": 9,
+      "players": {
+        "C2A258E": {
+          "win": 4,
+          "lost": 0,
+          "battle_sets": {
+            "精神击破_瞬间移动_攻击强化": {
+              "win": 4,
+              "lost": 0
+            }
+          }
+        },
+        "KE7PTPQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "精神击破_瞬间移动_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "X72NP18": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "精神击破_瞬间移动_攻击强化": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "479XTPA": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "精神击破_瞬间移动_攻击强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "精神击破_瞬间移动_攻击强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "54RP3EQ": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "精神击破_瞬间移动_攻击强化": {
+              "win": 1,
+              "lost": 0
+            },
+            "精神击破_自我再生_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "YCT6K2M": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "精神击破_瞬间移动_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "RTTX1T7": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "精神击破_瞬间移动_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "780MC84": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "预知未来_自我再生_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "K32ET2K": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "预知未来_瞬间移动_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "HCN21KQ": {
+          "win": 2,
+          "lost": 2,
+          "battle_sets": {
+            "预知未来_瞬间移动_攻击强化": {
+              "win": 2,
+              "lost": 2
+            }
+          }
+        },
+        "G5NG3N3": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "预知未来_瞬间移动_攻击强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "精神击破_瞬间移动_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "44AFPRF": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "精神击破_瞬间移动_攻击强化": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "Q6TY0QN": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "精神击破_瞬间移动_攻击强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "精神击破_瞬间移动_攻击强化": {
+          "win": 9,
+          "lost": 5
+        },
+        "精神击破_自我再生_攻击强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "精神击破_瞬间移动_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "精神击破_瞬间移动_速度强化": {
+          "win": 0,
+          "lost": 1
+        },
+        "预知未来_自我再生_攻击强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "预知未来_瞬间移动_攻击强化": {
+          "win": 3,
+          "lost": 3
+        }
+      }
+    },
+    "密勒顿": {
+      "win": 11,
+      "lost": 9,
+      "players": {
+        "C2A258E": {
+          "win": 4,
+          "lost": 2,
+          "battle_sets": {
+            "充电光束_打雷_逃脱按键": {
+              "win": 4,
+              "lost": 2
+            }
+          }
+        },
+        "R22M468": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "充电光束_打雷_逃脱按键": {
+              "win": 0,
+              "lost": 2
+            }
+          }
+        },
+        "Y549F8F": {
+          "win": 2,
+          "lost": 1,
+          "battle_sets": {
+            "充电光束_打雷_逃脱按键": {
+              "win": 2,
+              "lost": 1
+            }
+          }
+        },
+        "QQRY93E": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "充电光束_打雷_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "YCT6K2M": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "闪电猛冲_抛物面充电_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "3GRC25P": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "充电光束_打雷_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "充电光束_打雷_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "H1KC46F": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "充电光束_打雷_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "AG15T5R": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "充电光束_打雷_逃脱按键": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "R8PTXY6": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "充电光束_打雷_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "充电光束_打雷_逃脱按键": {
+          "win": 11,
+          "lost": 8
+        },
+        "闪电猛冲_抛物面充电_万灵药": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "阿罗拉雷丘": {
+      "win": 12,
+      "lost": 5,
+      "players": {
+        "C2A258E": {
+          "win": 3,
+          "lost": 0,
+          "battle_sets": {
+            "辅助力量_精神强念_逃脱按键": {
+              "win": 3,
+              "lost": 0
+            }
+          }
+        },
+        "79KM109": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "电球_十万伏特_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "Y549F8F": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "电球_十万伏特_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "61EMXLK": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "电球_十万伏特_逃脱按键": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "G61M85M": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "电球_十万伏特_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "44AFPRF": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "辅助力量_十万伏特_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "R8PTXY6": {
+          "win": 4,
+          "lost": 3,
+          "battle_sets": {
+            "电球_十万伏特_逃脱按键": {
+              "win": 2,
+              "lost": 1
+            },
+            "辅助力量_精神强念_逃脱按键": {
+              "win": 0,
+              "lost": 2
+            },
+            "辅助力量_十万伏特_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "辅助力量_精神强念_逃脱按键": {
+          "win": 3,
+          "lost": 2
+        },
+        "电球_十万伏特_逃脱按键": {
+          "win": 5,
+          "lost": 3
+        },
+        "辅助力量_十万伏特_逃脱按键": {
+          "win": 4,
+          "lost": 0
+        }
+      }
+    },
+    "巴布土拨": {
+      "win": 2,
+      "lost": 3,
+      "players": {
+        "C2A258E": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "雷电拳_伏特替换_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            },
+            "闪电强袭_伏特替换_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "H1KC46F": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "闪电强袭_伏特替换_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "AG15T5R": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "闪电强袭_音速拳_万灵药": {
+              "win": 0,
+              "lost": 2
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "雷电拳_伏特替换_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "闪电强袭_伏特替换_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "闪电强袭_伏特替换_万灵药": {
+          "win": 0,
+          "lost": 1
+        },
+        "闪电强袭_音速拳_万灵药": {
+          "win": 0,
+          "lost": 2
+        }
+      }
+    },
+    "苍响": {
+      "win": 14,
+      "lost": 3,
+      "players": {
+        "YP8Q3M3": {
+          "win": 4,
+          "lost": 1,
+          "battle_sets": {
+            "金属爪_嬉闹_万灵药": {
+              "win": 4,
+              "lost": 1
+            }
+          }
+        },
+        "79KM109": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "金属爪_嬉闹_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "479XTPA": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "金属爪_嬉闹_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "金属爪_高速移动_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "828A4X7": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "金属爪_高速移动_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "YCT6K2M": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "金属爪_高速移动_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "6C33ALE": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "金属爪_嬉闹_得分加速装置": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "4QAH99C": {
+          "win": 2,
+          "lost": 1,
+          "battle_sets": {
+            "金属爪_高速移动_万灵药": {
+              "win": 2,
+              "lost": 1
+            }
+          }
+        },
+        "EN7C58P": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "金属爪_嬉闹_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NQC1MP1": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "金属爪_嬉闹_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "金属爪_嬉闹_万灵药": {
+          "win": 7,
+          "lost": 2
+        },
+        "金属爪_高速移动_逃脱按键": {
+          "win": 2,
+          "lost": 0
+        },
+        "金属爪_高速移动_攻击强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "金属爪_高速移动_万灵药": {
+          "win": 3,
+          "lost": 1
+        },
+        "金属爪_嬉闹_得分加速装置": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "冰伊布": {
+      "win": 32,
+      "lost": 15,
+      "players": {
+        "YP8Q3M3": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冰锥_冰砾_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "1NX1GQF": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冰锥_冰砾_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "XC72974": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冰锥_冰砾_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "3YQYP4A": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "冰锥_冰砾_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "PR8AM41": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冰锥_冰砾_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "QKRRHE0": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "冰锥_冰砾_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "79KM109": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冰锥_冰砾_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "X72NP18": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "冰锥_冰砾_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "R22M468": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "冰锥_冰砾_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "Y549F8F": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "冰冻之风_冷冻干燥_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "FLG7KA": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冰锥_冰砾_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "54RP3EQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冰锥_冰砾_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "RTTX1T7": {
+          "win": 16,
+          "lost": 5,
+          "battle_sets": {
+            "冰锥_冰砾_速度强化": {
+              "win": 16,
+              "lost": 5
+            }
+          }
+        },
+        "65M5LMX": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "冰锥_冰砾_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "MFQLAKQ": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "冰锥_冰砾_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "MM7PYR8": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "冰锥_冰砾_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "64HFPAG": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冰锥_冰砾_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "TNR8HAQ": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "冰锥_冰砾_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "G5NG3N3": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "冰冻之风_冷冻干燥_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            },
+            "冰锥_冰砾_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "冰锥_冰砾_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "87X5AHH": {
+          "win": 1,
+          "lost": 2,
+          "battle_sets": {
+            "冰锥_冰砾_逃脱按键": {
+              "win": 1,
+              "lost": 2
+            }
+          }
+        },
+        "G4829H7": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冰锥_冰砾_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "冰锥_冰砾_逃脱按键": {
+          "win": 11,
+          "lost": 7
+        },
+        "冰锥_冰砾_速度强化": {
+          "win": 20,
+          "lost": 7
+        },
+        "冰冻之风_冷冻干燥_逃脱按键": {
+          "win": 1,
+          "lost": 1
+        }
+      }
+    },
+    "谜拟丘": {
+      "win": 18,
+      "lost": 9,
+      "players": {
+        "YP8Q3M3": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_影子偷袭_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "3YQYP4A": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_戏法空间_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "PR8AM41": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "暗影爪_影子偷袭_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "R22M468": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "嬉闹_影子偷袭_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "QPF9XLG": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "嬉闹_影子偷袭_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NEGY45C": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_戏法空间_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "6P0515": {
+          "win": 1,
+          "lost": 2,
+          "battle_sets": {
+            "嬉闹_影子偷袭_速度强化": {
+              "win": 1,
+              "lost": 1
+            },
+            "暗影爪_影子偷袭_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "8XATE8": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_戏法空间_万灵药": {
+              "win": 1,
+              "lost": 0
+            },
+            "嬉闹_影子偷袭_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "1N4C6RT": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_影子偷袭_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NAMLAA0": {
+          "win": 2,
+          "lost": 1,
+          "battle_sets": {
+            "暗影爪_戏法空间_万灵药": {
+              "win": 1,
+              "lost": 0
+            },
+            "嬉闹_戏法空间_万灵药": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "MM7PYR8": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "暗影爪_戏法空间_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 4,
+          "lost": 2,
+          "battle_sets": {
+            "暗影爪_影子偷袭_万灵药": {
+              "win": 2,
+              "lost": 1
+            },
+            "暗影爪_戏法空间_万灵药": {
+              "win": 2,
+              "lost": 1
+            }
+          }
+        },
+        "G61M85M": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_戏法空间_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "44AFPRF": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "嬉闹_影子偷袭_攻击强化": {
+              "win": 1,
+              "lost": 0
+            },
+            "暗影爪_戏法空间_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NQC1MP1": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "暗影爪_戏法空间_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "87X5AHH": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "嬉闹_影子偷袭_攻击强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "暗影爪_影子偷袭_万灵药": {
+          "win": 3,
+          "lost": 2
+        },
+        "暗影爪_戏法空间_万灵药": {
+          "win": 8,
+          "lost": 3
+        },
+        "嬉闹_影子偷袭_逃脱按键": {
+          "win": 2,
+          "lost": 0
+        },
+        "嬉闹_影子偷袭_速度强化": {
+          "win": 1,
+          "lost": 1
+        },
+        "暗影爪_影子偷袭_速度强化": {
+          "win": 0,
+          "lost": 1
+        },
+        "嬉闹_影子偷袭_攻击强化": {
+          "win": 2,
+          "lost": 1
+        },
+        "暗影爪_影子偷袭_攻击强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "嬉闹_戏法空间_万灵药": {
+          "win": 1,
+          "lost": 1
+        }
+      }
+    },
+    "巨钳螳螂": {
+      "win": 6,
+      "lost": 7,
+      "players": {
+        "YP8Q3M3": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "子弹拳_剑舞_伤药": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "3YQYP4A": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "双翼_二连击_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "79KM109": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "双翼_剑舞_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "R22M468": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "双翼_二连击_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "NEGY45C": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "双翼_剑舞_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "PY1RRC9": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "双翼_二连击_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NHMQEPC": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "双翼_二连击_万灵药": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "AG15T5R": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "子弹拳_剑舞_伤药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "TP3KQ7Q": {
+          "win": 1,
+          "lost": 2,
+          "battle_sets": {
+            "双翼_二连击_万灵药": {
+              "win": 1,
+              "lost": 2
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "子弹拳_剑舞_伤药": {
+          "win": 2,
+          "lost": 1
+        },
+        "双翼_二连击_万灵药": {
+          "win": 4,
+          "lost": 4
+        },
+        "双翼_剑舞_万灵药": {
+          "win": 0,
+          "lost": 2
+        }
+      }
+    },
+    "超级路卡利欧": {
+      "win": 36,
+      "lost": 17,
+      "players": {
+        "YP8Q3M3": {
+          "win": 4,
+          "lost": 3,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 4,
+              "lost": 3
+            }
+          }
+        },
+        "39EP00Q": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "QKRRHE0": {
+          "win": 3,
+          "lost": 3,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 3,
+              "lost": 3
+            }
+          }
+        },
+        "79KM109": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "R22M468": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "479XTPA": {
+          "win": 8,
+          "lost": 2,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 8,
+              "lost": 2
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "YCT6K2M": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "MFQLAKQ": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "NAMLAA0": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "XTXNNRM": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "4QAH99C": {
+          "win": 5,
+          "lost": 0,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 5,
+              "lost": 0
+            }
+          }
+        },
+        "2A66AC0": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "EN7C58P": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "64HFPAG": {
+          "win": 3,
+          "lost": 1,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 3,
+              "lost": 1
+            }
+          }
+        },
+        "HCN21KQ": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "2RM3EY2": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "44AFPRF": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "H1KC46F": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "R8PTXY6": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "增强拳_近身战_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "增强拳_近身战_逃脱按键": {
+          "win": 36,
+          "lost": 17
+        }
+      }
+    },
+    "武道熊师": {
+      "win": 11,
+      "lost": 8,
+      "players": {
+        "YP8Q3M3": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "水流连打_水流裂破_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "FPYT7HM": {
+          "win": 3,
+          "lost": 0,
+          "battle_sets": {
+            "水流连打_水流裂破_万灵药": {
+              "win": 3,
+              "lost": 0
+            }
+          }
+        },
+        "79KM109": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "水流连打_水流裂破_万灵药": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "NEGY45C": {
+          "win": 1,
+          "lost": 3,
+          "battle_sets": {
+            "水流连打_水流裂破_万灵药": {
+              "win": 1,
+              "lost": 3
+            }
+          }
+        },
+        "92HFTG7": {
+          "win": 3,
+          "lost": 3,
+          "battle_sets": {
+            "水流连打_水流裂破_万灵药": {
+              "win": 3,
+              "lost": 3
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "水流连打_水流裂破_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "YCT6K2M": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "水流连打_水流裂破_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "水流连打_水流裂破_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "水流连打_水流裂破_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "水流连打_水流裂破_万灵药": {
+          "win": 10,
+          "lost": 8
+        }
+      }
+    },
+    "皮可西": {
+      "win": 13,
+      "lost": 11,
+      "players": {
+        "1NX1GQF": {
+          "win": 2,
+          "lost": 3,
+          "battle_sets": {
+            "月光_看我嘛_速度强化": {
+              "win": 2,
+              "lost": 2
+            },
+            "月光_重力_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "8969LMA": {
+          "win": 3,
+          "lost": 2,
+          "battle_sets": {
+            "月光_看我嘛_速度强化": {
+              "win": 1,
+              "lost": 1
+            },
+            "月光_重力_速度强化": {
+              "win": 2,
+              "lost": 1
+            }
+          }
+        },
+        "X4KQ7FT": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "月光_看我嘛_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 1,
+          "lost": 2,
+          "battle_sets": {
+            "月光_看我嘛_逃脱按键": {
+              "win": 1,
+              "lost": 2
+            }
+          }
+        },
+        "EHQ2R": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "月光_重力_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "230NANT": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "月光_看我嘛_速度强化": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "1N4C6RT": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "月光_看我嘛_速度强化": {
+              "win": 0,
+              "lost": 1
+            },
+            "月光_重力_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "4QAH99C": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "月光_重力_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "K32ET2K": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "月光_重力_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "95LL46P": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "月光_看我嘛_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "PY1RRC9": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "月光_看我嘛_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "87X5AHH": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "月光_看我嘛_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "月光_看我嘛_速度强化": {
+          "win": 6,
+          "lost": 4
+        },
+        "月光_重力_速度强化": {
+          "win": 4,
+          "lost": 3
+        },
+        "月光_看我嘛_攻击强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "月光_看我嘛_逃脱按键": {
+          "win": 2,
+          "lost": 3
+        },
+        "月光_重力_万灵药": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "幸福蛋": {
+      "win": 10,
+      "lost": 7,
+      "players": {
+        "1NX1GQF": {
+          "win": 5,
+          "lost": 3,
+          "battle_sets": {
+            "炸蛋_生蛋_速度强化": {
+              "win": 3,
+              "lost": 2
+            },
+            "帮助_神秘守护_速度强化": {
+              "win": 2,
+              "lost": 1
+            }
+          }
+        },
+        "8969LMA": {
+          "win": 1,
+          "lost": 2,
+          "battle_sets": {
+            "帮助_神秘守护_速度强化": {
+              "win": 1,
+              "lost": 1
+            },
+            "炸蛋_生蛋_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "帮助_神秘守护_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "230NANT": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "炸蛋_生蛋_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "6C33ALE": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "炸蛋_生蛋_速度强化": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "K32ET2K": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "帮助_神秘守护_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "R8PTXY6": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "炸蛋_生蛋_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "炸蛋_生蛋_速度强化": {
+          "win": 6,
+          "lost": 4
+        },
+        "帮助_神秘守护_速度强化": {
+          "win": 4,
+          "lost": 3
+        }
+      }
+    },
+    "水伊布": {
+      "win": 31,
+      "lost": 11,
+      "players": {
+        "1NX1GQF": {
+          "win": 2,
+          "lost": 1,
+          "battle_sets": {
+            "浊流_水流环_伤药": {
+              "win": 2,
+              "lost": 1
+            }
+          }
+        },
+        "XC72974": {
+          "win": 6,
+          "lost": 0,
+          "battle_sets": {
+            "浊流_快速折返_攻击强化": {
+              "win": 6,
+              "lost": 0
+            }
+          }
+        },
+        "39EP00Q": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "浊流_水流环_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "X72NP18": {
+          "win": 4,
+          "lost": 1,
+          "battle_sets": {
+            "浊流_水流环_速度强化": {
+              "win": 4,
+              "lost": 1
+            }
+          }
+        },
+        "R22M468": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "浊流_水流环_速度强化": {
+              "win": 1,
+              "lost": 0
+            },
+            "浊流_快速折返_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "8969LMA": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "浊流_水流环_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "X4KQ7FT": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "浊流_快速折返_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "浊流_水流环_速度强化": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "EHQ2R": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "浊流_水流环_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "GGGXNM7": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "水炮_快速折返_速度强化": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "1N4C6RT": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "水炮_水流环_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "4QAH99C": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "水炮_水流环_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "K32ET2K": {
+          "win": 2,
+          "lost": 5,
+          "battle_sets": {
+            "浊流_水流环_速度强化": {
+              "win": 2,
+              "lost": 5
+            }
+          }
+        },
+        "MM7PYR8": {
+          "win": 3,
+          "lost": 0,
+          "battle_sets": {
+            "浊流_水流环_伤药": {
+              "win": 2,
+              "lost": 0
+            },
+            "浊流_快速折返_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "44AFPRF": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "浊流_快速折返_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "LH69TFP": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "浊流_水流环_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NHMQEPC": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "浊流_快速折返_迟缓烟雾": {
+              "win": 0,
+              "lost": 1
+            },
+            "浊流_水流环_迟缓烟雾": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "1FYYQPF": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "浊流_水流环_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "浊流_水流环_伤药": {
+          "win": 6,
+          "lost": 1
+        },
+        "浊流_快速折返_攻击强化": {
+          "win": 6,
+          "lost": 0
+        },
+        "浊流_水流环_逃脱按键": {
+          "win": 2,
+          "lost": 0
+        },
+        "浊流_水流环_速度强化": {
+          "win": 10,
+          "lost": 6
+        },
+        "浊流_快速折返_速度强化": {
+          "win": 2,
+          "lost": 1
+        },
+        "浊流_水流环_万灵药": {
+          "win": 1,
+          "lost": 0
+        },
+        "水炮_快速折返_速度强化": {
+          "win": 1,
+          "lost": 1
+        },
+        "水炮_水流环_伤药": {
+          "win": 1,
+          "lost": 0
+        },
+        "水炮_水流环_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "浊流_快速折返_伤药": {
+          "win": 1,
+          "lost": 0
+        },
+        "浊流_快速折返_迟缓烟雾": {
+          "win": 0,
+          "lost": 1
+        },
+        "浊流_水流环_迟缓烟雾": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "妙蛙花": {
+      "win": 8,
+      "lost": 5,
+      "players": {
+        "HYR32H": {
+          "win": 6,
+          "lost": 3,
+          "battle_sets": {
+            "终极吸取_花瓣舞_万灵药": {
+              "win": 6,
+              "lost": 3
+            }
+          }
+        },
+        "QKRRHE0": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "终极吸取_花瓣舞_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "Y549F8F": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "终极吸取_花瓣舞_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "1N4C6RT": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "终极吸取_花瓣舞_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "Y4H59PN": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "终极吸取_花瓣舞_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "终极吸取_花瓣舞_万灵药": {
+          "win": 8,
+          "lost": 5
+        }
+      }
+    },
+    "花疗环环": {
+      "win": 17,
+      "lost": 3,
+      "players": {
+        "HYR32H": {
+          "win": 6,
+          "lost": 0,
+          "battle_sets": {
+            "花疗_魔法叶_迟缓烟雾": {
+              "win": 6,
+              "lost": 0
+            }
+          }
+        },
+        "8969LMA": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "花疗_魔法叶_迟缓烟雾": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "6P0515": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "花疗_魔法叶_迟缓烟雾": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "54RP3EQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "花疗_魔法叶_迟缓烟雾": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "EHQ2R": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "花疗_打草结_迟缓烟雾": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "1N4C6RT": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "花疗_打草结_迟缓烟雾": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "Y4H59PN": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "天使之吻_打草结_迟缓烟雾": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "64HFPAG": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "花疗_打草结_迟缓烟雾": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "H66PEX5": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "花疗_魔法叶_迟缓烟雾": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "L8EPXF5": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "花疗_魔法叶_迟缓烟雾": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "87X5AHH": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "花疗_打草结_迟缓烟雾": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "R8PTXY6": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "花疗_打草结_迟缓烟雾": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "花疗_魔法叶_迟缓烟雾": {
+          "win": 11,
+          "lost": 1
+        },
+        "花疗_打草结_迟缓烟雾": {
+          "win": 6,
+          "lost": 1
+        },
+        "天使之吻_打草结_迟缓烟雾": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "狙射树枭": {
+      "win": 4,
+      "lost": 1,
+      "players": {
+        "HYR32H": {
+          "win": 2,
+          "lost": 1,
+          "battle_sets": {
+            "飞叶快刀_影子偷袭_逃脱按键": {
+              "win": 2,
+              "lost": 1
+            }
+          }
+        },
+        "39EP00Q": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "飞叶快刀_影子偷袭_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "65M5LMX": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "缝影_飞叶风暴_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "飞叶快刀_影子偷袭_逃脱按键": {
+          "win": 2,
+          "lost": 1
+        },
+        "飞叶快刀_影子偷袭_攻击强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "缝影_飞叶风暴_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "多龙巴鲁托": {
+      "win": 21,
+      "lost": 13,
+      "players": {
+        "HYR32H": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "暗影球_潜灵奇袭_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "934M343": {
+          "win": 9,
+          "lost": 5,
+          "battle_sets": {
+            "暗影球_潜灵奇袭_攻击强化": {
+              "win": 9,
+              "lost": 5
+            }
+          }
+        },
+        "YCT6K2M": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "暗影球_龙之舞_万灵药": {
+              "win": 0,
+              "lost": 1
+            },
+            "龙息_龙之舞_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NKHHNN6": {
+          "win": 10,
+          "lost": 7,
+          "battle_sets": {
+            "暗影球_龙之舞_万灵药": {
+              "win": 10,
+              "lost": 7
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "暗影球_潜灵奇袭_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "暗影球_潜灵奇袭_攻击强化": {
+          "win": 9,
+          "lost": 5
+        },
+        "暗影球_龙之舞_万灵药": {
+          "win": 10,
+          "lost": 8
+        },
+        "龙息_龙之舞_万灵药": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "太阳伊布": {
+      "win": 8,
+      "lost": 6,
+      "players": {
+        "XC72974": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "精神冲击_预知未来_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            },
+            "精神冲击_幻象光线_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "R22M468": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "精神冲击_幻象光线_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "479XTPA": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "辅助力量_幻象光线_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "6P0515": {
+          "win": 2,
+          "lost": 2,
+          "battle_sets": {
+            "精神冲击_幻象光线_逃脱按键": {
+              "win": 2,
+              "lost": 1
+            },
+            "辅助力量_幻象光线_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "T2L2848": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "精神冲击_幻象光线_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "EHQ2R": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "辅助力量_预知未来_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "YCT6K2M": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "精神冲击_幻象光线_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "K32ET2K": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "精神冲击_幻象光线_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "H66PEX5": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "辅助力量_预知未来_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "87X5AHH": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "辅助力量_幻象光线_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "精神冲击_预知未来_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "精神冲击_幻象光线_逃脱按键": {
+          "win": 5,
+          "lost": 3
+        },
+        "辅助力量_幻象光线_逃脱按键": {
+          "win": 0,
+          "lost": 3
+        },
+        "辅助力量_预知未来_逃脱按键": {
+          "win": 2,
+          "lost": 0
+        }
+      }
+    },
+    "烈咬陆鲨": {
+      "win": 3,
+      "lost": 0,
+      "players": {
+        "XC72974": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "龙之俯冲_龙爪_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NQC1MP1": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "龙之俯冲_龙爪_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "R8PTXY6": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "龙之俯冲_龙爪_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "龙之俯冲_龙爪_逃脱按键": {
+          "win": 3,
+          "lost": 0
+        }
+      }
+    },
+    "拉帝欧斯": {
+      "win": 13,
+      "lost": 6,
+      "players": {
+        "XC72974": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "意念移物_流星群_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "R22M468": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "洁净光芒_流星群_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "Y549F8F": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "洁净光芒_龙之波动_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 3,
+          "lost": 0,
+          "battle_sets": {
+            "洁净光芒_流星群_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            },
+            "洁净光芒_龙之波动_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            },
+            "意念移物_龙之波动_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "1N4C6RT": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "意念移物_龙之波动_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "RTTX1T7": {
+          "win": 4,
+          "lost": 5,
+          "battle_sets": {
+            "意念移物_龙之波动_逃脱按键": {
+              "win": 0,
+              "lost": 2
+            },
+            "洁净光芒_龙之波动_逃脱按键": {
+              "win": 4,
+              "lost": 3
+            }
+          }
+        },
+        "R8PTXY6": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "洁净光芒_龙之波动_逃脱按键": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "意念移物_流星群_逃脱按键": {
+          "win": 2,
+          "lost": 0
+        },
+        "洁净光芒_流星群_逃脱按键": {
+          "win": 2,
+          "lost": 0
+        },
+        "洁净光芒_龙之波动_逃脱按键": {
+          "win": 7,
+          "lost": 4
+        },
+        "意念移物_龙之波动_逃脱按键": {
+          "win": 2,
+          "lost": 2
+        }
+      }
+    },
+    "闪焰王牌": {
+      "win": 12,
+      "lost": 4,
+      "players": {
+        "XC72974": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "火焰踢_佯攻_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "QKRRHE0": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "火焰球_佯攻_攻击强化": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 3,
+          "lost": 0,
+          "battle_sets": {
+            "火焰踢_佯攻_逃脱按键": {
+              "win": 3,
+              "lost": 0
+            }
+          }
+        },
+        "NKHHNN6": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "火焰踢_佯攻_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "HCN21KQ": {
+          "win": 1,
+          "lost": 2,
+          "battle_sets": {
+            "火焰踢_佯攻_逃脱按键": {
+              "win": 0,
+              "lost": 2
+            },
+            "火焰球_佯攻_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "TNR8HAQ": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "火焰踢_蓄能焰袭_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "H66PEX5": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "火焰踢_佯攻_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 1,
+          "lost": 2,
+          "battle_sets": {
+            "火焰踢_佯攻_逃脱按键": {
+              "win": 1,
+              "lost": 2
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "火焰踢_佯攻_逃脱按键": {
+          "win": 7,
+          "lost": 4
+        },
+        "火焰球_佯攻_攻击强化": {
+          "win": 2,
+          "lost": 0
+        },
+        "火焰球_佯攻_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "火焰踢_蓄能焰袭_逃脱按键": {
+          "win": 2,
+          "lost": 0
+        }
+      }
+    },
+    "妖火红狐": {
+      "win": 9,
+      "lost": 3,
+      "players": {
+        "XC72974": {
+          "win": 4,
+          "lost": 0,
+          "battle_sets": {
+            "魔法火焰_火焰旋涡_逃脱按键": {
+              "win": 3,
+              "lost": 0
+            },
+            "大字爆炎_火焰旋涡_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "QPF9XLG": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "大字爆炎_火焰旋涡_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "92HFTG7": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "魔法火焰_蓄能焰袭_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "魔法火焰_火焰旋涡_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "PY1RRC9": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "魔法火焰_蓄能焰袭_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "87X5AHH": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "大字爆炎_火焰旋涡_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "AG15T5R": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "魔法火焰_火焰旋涡_逃脱按键": {
+              "win": 0,
+              "lost": 2
+            }
+          }
+        },
+        "XRKA6CM": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "魔法火焰_火焰旋涡_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "魔法火焰_火焰旋涡_逃脱按键": {
+          "win": 4,
+          "lost": 3
+        },
+        "大字爆炎_火焰旋涡_逃脱按键": {
+          "win": 3,
+          "lost": 0
+        },
+        "魔法火焰_蓄能焰袭_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "魔法火焰_蓄能焰袭_万灵药": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "阿罗拉九尾": {
+      "win": 2,
+      "lost": 2,
+      "players": {
+        "XC72974": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "魔法闪耀_极光幕_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "QKRRHE0": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "雪崩_暴风雪_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "8969LMA": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "雪崩_暴风雪_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "MFQLAKQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "雪崩_暴风雪_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "魔法闪耀_极光幕_速度强化": {
+          "win": 0,
+          "lost": 1
+        },
+        "雪崩_暴风雪_逃脱按键": {
+          "win": 2,
+          "lost": 1
+        }
+      }
+    },
+    "水晶灯火灵": {
+      "win": 5,
+      "lost": 0,
+      "players": {
+        "XC72974": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "喷射火焰_封印_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "39EP00Q": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "过热_封印_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "PY1RRC9": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "喷射火焰_封印_脱壳忍者玩偶": {
+              "win": 1,
+              "lost": 0
+            },
+            "喷射火焰_封印_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "XRKA6CM": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "过热_封印_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "喷射火焰_封印_逃脱按键": {
+          "win": 2,
+          "lost": 0
+        },
+        "过热_封印_逃脱按键": {
+          "win": 2,
+          "lost": 0
+        },
+        "喷射火焰_封印_脱壳忍者玩偶": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "朽木妖": {
+      "win": 9,
+      "lost": 7,
+      "players": {
+        "LL8P2QX": {
+          "win": 6,
+          "lost": 2,
+          "battle_sets": {
+            "咒术_木角_速度强化": {
+              "win": 6,
+              "lost": 2
+            }
+          }
+        },
+        "KE7PTPQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "咒术_木角_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "39EP00Q": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "咒术_木角_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "1N4C6RT": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "咒术_分担痛楚_伤药": {
+              "win": 0,
+              "lost": 1
+            },
+            "咒术_分担痛楚_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "K32ET2K": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "木槌_分担痛楚_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "H1KC46F": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "木槌_木角_速度强化": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "G4829H7": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "咒术_分担痛楚_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "咒术_木角_速度强化": {
+          "win": 8,
+          "lost": 2
+        },
+        "咒术_分担痛楚_伤药": {
+          "win": 0,
+          "lost": 1
+        },
+        "咒术_分担痛楚_速度强化": {
+          "win": 0,
+          "lost": 2
+        },
+        "木槌_分担痛楚_速度强化": {
+          "win": 0,
+          "lost": 1
+        },
+        "木槌_木角_速度强化": {
+          "win": 1,
+          "lost": 1
+        }
+      }
+    },
+    "象牙猪": {
+      "win": 1,
+      "lost": 1,
+      "players": {
+        "LL8P2QX": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冰冻牙_地震_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "XRKA6CM": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "冰柱坠击_十万马力_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "冰冻牙_地震_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "冰柱坠击_十万马力_逃脱按键": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "班基拉斯": {
+      "win": 2,
+      "lost": 2,
+      "players": {
+        "LL8P2QX": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "恶之波动_原始之力_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "PR8AM41": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "恶之波动_原始之力_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "828A4X7": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "恶之波动_流沙深渊_伤药": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "恶之波动_原始之力_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "恶之波动_原始之力_万灵药": {
+          "win": 0,
+          "lost": 1
+        },
+        "恶之波动_流沙深渊_伤药": {
+          "win": 1,
+          "lost": 1
+        }
+      }
+    },
+    "怪力": {
+      "win": 2,
+      "lost": 1,
+      "players": {
+        "LL8P2QX": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "十字劈_深渊翻滚_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "1N4C6RT": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "近身战_爆裂拳_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "十字劈_深渊翻滚_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "十字劈_深渊翻滚_逃脱按键": {
+          "win": 1,
+          "lost": 1
+        },
+        "近身战_爆裂拳_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "暴鲤龙": {
+      "win": 3,
+      "lost": 6,
+      "players": {
+        "LL8P2QX": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "龙息_弹跳_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "Q0PH5T1": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "龙息_攀瀑_伤药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "1N4C6RT": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "龙息_弹跳_伤药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "MFQLAKQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "龙息_攀瀑_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "XTXNNRM": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "龙息_攀瀑_伤药": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "64HFPAG": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "龙息_弹跳_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "H1KC46F": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "龙息_弹跳_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "XRKA6CM": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "龙息_攀瀑_伤药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "龙息_弹跳_逃脱按键": {
+          "win": 1,
+          "lost": 2
+        },
+        "龙息_攀瀑_伤药": {
+          "win": 1,
+          "lost": 3
+        },
+        "龙息_弹跳_伤药": {
+          "win": 0,
+          "lost": 1
+        },
+        "龙息_攀瀑_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "拉帝亚斯": {
+      "win": 7,
+      "lost": 2,
+      "players": {
+        "LL8P2QX": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "龙声鼓舞_龙息_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "R22M468": {
+          "win": 4,
+          "lost": 1,
+          "battle_sets": {
+            "薄雾球_龙之波动_万灵药": {
+              "win": 4,
+              "lost": 0
+            },
+            "薄雾球_龙息_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "T2L2848": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "薄雾球_龙之波动_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "GGGXNM7": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "薄雾球_龙之波动_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "XRKA6CM": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "薄雾球_龙之波动_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "龙声鼓舞_龙息_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "薄雾球_龙之波动_万灵药": {
+          "win": 5,
+          "lost": 0
+        },
+        "薄雾球_龙息_万灵药": {
+          "win": 0,
+          "lost": 1
+        },
+        "薄雾球_龙之波动_逃脱按键": {
+          "win": 1,
+          "lost": 1
+        }
+      }
+    },
+    "呆壳兽": {
+      "win": 5,
+      "lost": 6,
+      "players": {
+        "LL8P2QX": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "热水_意念移物_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "T2L2848": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "热水_意念移物_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "828A4X7": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "冲浪_瞬间失忆_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "Y4H59PN": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冲浪_意念移物_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "K32ET2K": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "冲浪_瞬间失忆_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "L8EPXF5": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "冲浪_意念移物_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "44AFPRF": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "热水_瞬间失忆_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "PY1RRC9": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "冲浪_意念移物_伤药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "G4829H7": {
+          "win": 2,
+          "lost": 1,
+          "battle_sets": {
+            "冲浪_瞬间失忆_伤药": {
+              "win": 2,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "热水_意念移物_逃脱按键": {
+          "win": 2,
+          "lost": 0
+        },
+        "冲浪_瞬间失忆_逃脱按键": {
+          "win": 0,
+          "lost": 2
+        },
+        "冲浪_意念移物_逃脱按键": {
+          "win": 1,
+          "lost": 1
+        },
+        "热水_瞬间失忆_逃脱按键": {
+          "win": 0,
+          "lost": 1
+        },
+        "冲浪_意念移物_伤药": {
+          "win": 0,
+          "lost": 1
+        },
+        "冲浪_瞬间失忆_伤药": {
+          "win": 2,
+          "lost": 1
+        }
+      }
+    },
+    "嘟嘟利": {
+      "win": 21,
+      "lost": 3,
+      "players": {
+        "FPYT7HM": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "三重攻击_飞踢_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "3YQYP4A": {
+          "win": 3,
+          "lost": 0,
+          "battle_sets": {
+            "三重攻击_飞踢_万灵药": {
+              "win": 3,
+              "lost": 0
+            }
+          }
+        },
+        "KE7PTPQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "三重攻击_飞踢_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NEGY45C": {
+          "win": 1,
+          "lost": 2,
+          "battle_sets": {
+            "三重攻击_飞踢_万灵药": {
+              "win": 1,
+              "lost": 2
+            }
+          }
+        },
+        "T2L2848": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "三重攻击_飞踢_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "三重攻击_飞踢_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "MFQLAKQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "三重攻击_飞踢_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "2A66AC0": {
+          "win": 9,
+          "lost": 0,
+          "battle_sets": {
+            "啄钻_飞踢_万灵药": {
+              "win": 8,
+              "lost": 0
+            },
+            "三重攻击_高速移动_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "Q3KF0XR": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "三重攻击_飞踢_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "2RM3EY2": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "三重攻击_飞踢_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "PY1RRC9": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "三重攻击_飞踢_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "TP3KQ7Q": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "三重攻击_飞踢_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "三重攻击_飞踢_万灵药": {
+          "win": 11,
+          "lost": 3
+        },
+        "啄钻_飞踢_万灵药": {
+          "win": 8,
+          "lost": 0
+        },
+        "三重攻击_高速移动_万灵药": {
+          "win": 1,
+          "lost": 0
+        },
+        "三重攻击_飞踢_速度强化": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "耿鬼": {
+      "win": 26,
+      "lost": 8,
+      "players": {
+        "3YQYP4A": {
+          "win": 6,
+          "lost": 0,
+          "battle_sets": {
+            "污泥炸弹_祸不单行_万灵药": {
+              "win": 6,
+              "lost": 0
+            }
+          }
+        },
+        "KE7PTPQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "污泥炸弹_祸不单行_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "QKRRHE0": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "污泥炸弹_祸不单行_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "79KM109": {
+          "win": 2,
+          "lost": 1,
+          "battle_sets": {
+            "污泥炸弹_祸不单行_万灵药": {
+              "win": 2,
+              "lost": 1
+            }
+          }
+        },
+        "NEGY45C": {
+          "win": 1,
+          "lost": 4,
+          "battle_sets": {
+            "污泥炸弹_祸不单行_万灵药": {
+              "win": 1,
+              "lost": 4
+            }
+          }
+        },
+        "6P0515": {
+          "win": 4,
+          "lost": 1,
+          "battle_sets": {
+            "污泥炸弹_祸不单行_万灵药": {
+              "win": 4,
+              "lost": 1
+            }
+          }
+        },
+        "92HFTG7": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "污泥炸弹_祸不单行_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "934M343": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "暗影球_食梦_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "828A4X7": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "暗影球_食梦_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "MFQLAKQ": {
+          "win": 3,
+          "lost": 1,
+          "battle_sets": {
+            "污泥炸弹_祸不单行_万灵药": {
+              "win": 3,
+              "lost": 1
+            }
+          }
+        },
+        "MM7PYR8": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "污泥炸弹_祸不单行_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "44AFPRF": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "暗影球_食梦_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "AG15T5R": {
+          "win": 3,
+          "lost": 0,
+          "battle_sets": {
+            "污泥炸弹_祸不单行_万灵药": {
+              "win": 3,
+              "lost": 0
+            }
+          }
+        },
+        "G4829H7": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "污泥炸弹_祸不单行_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "污泥炸弹_祸不单行_万灵药": {
+          "win": 21,
+          "lost": 8
+        },
+        "污泥炸弹_祸不单行_攻击强化": {
+          "win": 2,
+          "lost": 0
+        },
+        "暗影球_食梦_万灵药": {
+          "win": 3,
+          "lost": 0
+        }
+      }
+    },
+    "达克莱伊": {
+      "win": 3,
+      "lost": 5,
+      "players": {
+        "3YQYP4A": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "暗影爪_恶之波动_脱壳忍者玩偶": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "YCT6K2M": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_恶之波动_伤药": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "65M5LMX": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "暗黑洞_诡计_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "XTXNNRM": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "暗黑洞_诡计_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "2A66AC0": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "暗黑洞_诡计_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "PY1RRC9": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "暗影爪_恶之波动_脱壳忍者玩偶": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "AG15T5R": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "暗黑洞_诡计_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "暗影爪_恶之波动_脱壳忍者玩偶": {
+          "win": 1,
+          "lost": 1
+        },
+        "暗影爪_恶之波动_伤药": {
+          "win": 2,
+          "lost": 0
+        },
+        "暗黑洞_诡计_万灵药": {
+          "win": 0,
+          "lost": 3
+        },
+        "暗黑洞_诡计_逃脱按键": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "伽勒尔烈焰马": {
+      "win": 1,
+      "lost": 1,
+      "players": {
+        "5RLA0RL": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "魔法闪耀_修长之角_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "G5NG3N3": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "魔法闪耀_修长之角_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "魔法闪耀_修长之角_伤药": {
+          "win": 1,
+          "lost": 0
+        },
+        "魔法闪耀_修长之角_万灵药": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "岩殿居蟹": {
+      "win": 4,
+      "lost": 3,
+      "players": {
+        "KE7PTPQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "岩石封锁_十字剪_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "79KM109": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "岩石封锁_十字剪_逃脱按键": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "828A4X7": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "岩石封锁_十字剪_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "岩石封锁_十字剪_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "44AFPRF": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "岩石封锁_十字剪_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "G4829H7": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "破壳_十字剪_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "岩石封锁_十字剪_逃脱按键": {
+          "win": 3,
+          "lost": 3
+        },
+        "破壳_十字剪_速度强化": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "沙奈朵": {
+      "win": 1,
+      "lost": 1,
+      "players": {
+        "KE7PTPQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "月亮之力_精神冲击_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "AG15T5R": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "精神强念_精神冲击_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "月亮之力_精神冲击_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "精神强念_精神冲击_逃脱按键": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "甲贺忍蛙": {
+      "win": 11,
+      "lost": 3,
+      "players": {
+        "39EP00Q": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "飞水手里剑_影子分身_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "T2L2848": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "飞水手里剑_影子分身_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "3GRC25P": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "冲浪_影子分身_攻击强化": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "HCN21KQ": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "飞水手里剑_影子分身_攻击强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "H66PEX5": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冲浪_烟幕_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "R0Y9XRC": {
+          "win": 6,
+          "lost": 1,
+          "battle_sets": {
+            "飞水手里剑_影子分身_逃脱按键": {
+              "win": 6,
+              "lost": 1
+            }
+          }
+        },
+        "AG15T5R": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "飞水手里剑_影子分身_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "飞水手里剑_影子分身_逃脱按键": {
+          "win": 7,
+          "lost": 2
+        },
+        "冲浪_影子分身_攻击强化": {
+          "win": 2,
+          "lost": 0
+        },
+        "飞水手里剑_影子分身_攻击强化": {
+          "win": 0,
+          "lost": 1
+        },
+        "冲浪_烟幕_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "飞水手里剑_影子分身_速度强化": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "梦幻": {
+      "win": 14,
+      "lost": 4,
+      "players": {
+        "PR8AM41": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "日光束_光墙_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "79KM109": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冲浪_高速移动_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "X72NP18": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "电球_光墙_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            },
+            "日光束_光墙_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "R22M468": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冲浪_光墙_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "T2L2848": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "电球_指导_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "828A4X7": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "日光束_高速移动_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "6C33ALE": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冲浪_高速移动_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "61EMXLK": {
+          "win": 2,
+          "lost": 1,
+          "battle_sets": {
+            "日光束_光墙_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            },
+            "冲浪_指导_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "HCN21KQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "电球_高速移动_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "PY1RRC9": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "冲浪_高速移动_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            },
+            "日光束_光墙_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NQC1MP1": {
+          "win": 2,
+          "lost": 1,
+          "battle_sets": {
+            "电球_指导_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            },
+            "日光束_光墙_逃脱按键": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "XRKA6CM": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "日光束_光墙_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "日光束_光墙_逃脱按键": {
+          "win": 4,
+          "lost": 3
+        },
+        "冲浪_高速移动_逃脱按键": {
+          "win": 3,
+          "lost": 0
+        },
+        "电球_光墙_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "冲浪_光墙_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "电球_指导_逃脱按键": {
+          "win": 1,
+          "lost": 1
+        },
+        "日光束_高速移动_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "冲浪_指导_逃脱按键": {
+          "win": 2,
+          "lost": 0
+        },
+        "电球_高速移动_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "超级喷火龙X": {
+      "win": 14,
+      "lost": 3,
+      "players": {
+        "PR8AM41": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "火焰拳_闪焰冲锋_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "QKRRHE0": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "火焰拳_闪焰冲锋_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "NEGY45C": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "火焰拳_闪焰冲锋_万灵药": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "Q0PH5T1": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "火焰拳_闪焰冲锋_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "K32ET2K": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "火焰拳_闪焰冲锋_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "L8EPXF5": {
+          "win": 7,
+          "lost": 0,
+          "battle_sets": {
+            "火焰拳_闪焰冲锋_万灵药": {
+              "win": 7,
+              "lost": 0
+            }
+          }
+        },
+        "1FYYQPF": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "火焰拳_闪焰冲锋_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "G4829H7": {
+          "win": 3,
+          "lost": 0,
+          "battle_sets": {
+            "火焰拳_闪焰冲锋_伤药": {
+              "win": 3,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "火焰拳_闪焰冲锋_万灵药": {
+          "win": 11,
+          "lost": 3
+        },
+        "火焰拳_闪焰冲锋_伤药": {
+          "win": 3,
+          "lost": 0
+        }
+      }
+    },
+    "爆肌蚊": {
+      "win": 1,
+      "lost": 2,
+      "players": {
+        "PR8AM41": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "击落_蛮力_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "FLG7KA": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "击落_蛮力_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "NAMLAA0": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "击落_蛮力_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "击落_蛮力_逃脱按键": {
+          "win": 1,
+          "lost": 2
+        }
+      }
+    },
+    "破破舵轮": {
+      "win": 13,
+      "lost": 6,
+      "players": {
+        "PR8AM41": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潮旋_掷锚_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "54RP3EQ": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "潮旋_掷锚_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "3GRC25P": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "潮旋_掷锚_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "XTXNNRM": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潮旋_掷锚_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "K32ET2K": {
+          "win": 5,
+          "lost": 2,
+          "battle_sets": {
+            "潮旋_重磅冲撞_伤药": {
+              "win": 5,
+              "lost": 1
+            },
+            "潮旋_掷锚_伤药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "MM7PYR8": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "潮旋_掷锚_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "64HFPAG": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "潮旋_掷锚_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "H66PEX5": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潮旋_掷锚_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潮旋_掷锚_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "H1KC46F": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潮旋_掷锚_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "XRKA6CM": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "强力鞭打_掷锚_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            },
+            "潮旋_重磅冲撞_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "潮旋_掷锚_伤药": {
+          "win": 1,
+          "lost": 1
+        },
+        "潮旋_掷锚_逃脱按键": {
+          "win": 6,
+          "lost": 2
+        },
+        "潮旋_重磅冲撞_伤药": {
+          "win": 5,
+          "lost": 1
+        },
+        "潮旋_掷锚_速度强化": {
+          "win": 0,
+          "lost": 1
+        },
+        "强力鞭打_掷锚_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "潮旋_重磅冲撞_逃脱按键": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "超梦X": {
+      "win": 15,
+      "lost": 9,
+      "players": {
+        "PR8AM41": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "精神击破_自我再生_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "X72NP18": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "预知未来_瞬间移动_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "T2L2848": {
+          "win": 8,
+          "lost": 2,
+          "battle_sets": {
+            "预知未来_瞬间移动_伤药": {
+              "win": 6,
+              "lost": 1
+            },
+            "预知未来_瞬间移动_万灵药": {
+              "win": 2,
+              "lost": 1
+            }
+          }
+        },
+        "92HFTG7": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "预知未来_瞬间移动_万灵药": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "54RP3EQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "预知未来_自我再生_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "XTXNNRM": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "预知未来_瞬间移动_伤药": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "EN7C58P": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "精神击破_瞬间移动_伤药": {
+              "win": 0,
+              "lost": 1
+            },
+            "预知未来_瞬间移动_伤药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "预知未来_自我再生_伤药": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "AG15T5R": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "预知未来_自我再生_攻击强化": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "R8PTXY6": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "精神击破_自我再生_伤药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "精神击破_自我再生_伤药": {
+          "win": 1,
+          "lost": 1
+        },
+        "预知未来_瞬间移动_攻击强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "预知未来_瞬间移动_伤药": {
+          "win": 7,
+          "lost": 3
+        },
+        "预知未来_瞬间移动_万灵药": {
+          "win": 3,
+          "lost": 2
+        },
+        "预知未来_自我再生_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "精神击破_瞬间移动_伤药": {
+          "win": 0,
+          "lost": 1
+        },
+        "预知未来_自我再生_伤药": {
+          "win": 1,
+          "lost": 1
+        },
+        "预知未来_自我再生_攻击强化": {
+          "win": 1,
+          "lost": 1
+        }
+      }
+    },
+    "烈箭鹰": {
+      "win": 8,
+      "lost": 6,
+      "players": {
+        "PR8AM41": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "蓄能焰袭_飞翔_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "QKRRHE0": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "燕返_勇鸟猛攻_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "6P0515": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "燕返_飞翔_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            },
+            "蓄能焰袭_勇鸟猛攻_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "FLG7KA": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "蓄能焰袭_飞翔_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "1N4C6RT": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "蓄能焰袭_飞翔_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "MFQLAKQ": {
+          "win": 2,
+          "lost": 1,
+          "battle_sets": {
+            "蓄能焰袭_飞翔_逃脱按键": {
+              "win": 2,
+              "lost": 1
+            }
+          }
+        },
+        "64HFPAG": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "蓄能焰袭_飞翔_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "HCN21KQ": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "蓄能焰袭_飞翔_逃脱按键": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "H1KC46F": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "蓄能焰袭_飞翔_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "蓄能焰袭_飞翔_逃脱按键": {
+          "win": 4,
+          "lost": 6
+        },
+        "燕返_勇鸟猛攻_逃脱按键": {
+          "win": 2,
+          "lost": 0
+        },
+        "燕返_飞翔_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "蓄能焰袭_勇鸟猛攻_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "路卡利欧": {
+      "win": 13,
+      "lost": 5,
+      "players": {
+        "QKRRHE0": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "神速_骨棒乱打_万灵药": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "79KM109": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "神速_骨棒乱打_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "Y549F8F": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "神速_骨棒乱打_万灵药": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        },
+        "X4KQ7FT": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "神速_骨棒乱打_万灵药": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "T2L2848": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "神速_骨棒乱打_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "92HFTG7": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "增强拳_近身战_万灵药": {
+              "win": 0,
+              "lost": 1
+            },
+            "神速_骨棒乱打_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "6C33ALE": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "神速_骨棒乱打_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "MFQLAKQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "神速_骨棒乱打_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "Q3KF0XR": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "神速_骨棒乱打_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "64HFPAG": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "神速_骨棒乱打_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "F7M99C8": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "神速_骨棒乱打_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "NHMQEPC": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "神速_骨棒乱打_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "H1KC46F": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "神速_骨棒乱打_万灵药": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "神速_骨棒乱打_万灵药": {
+          "win": 13,
+          "lost": 4
+        },
+        "增强拳_近身战_万灵药": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "叶伊布": {
+      "win": 13,
+      "lost": 7,
+      "players": {
+        "79KM109": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "飞叶快刀_燕返_攻击强化": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "X72NP18": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "飞叶快刀_燕返_攻击强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "6P0515": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "飞叶快刀_燕返_攻击强化": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "6C33ALE": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "飞叶快刀_燕返_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NAMLAA0": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "飞叶快刀_燕返_攻击强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "XTXNNRM": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "飞叶快刀_燕返_攻击强化": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "Q3KF0XR": {
+          "win": 2,
+          "lost": 2,
+          "battle_sets": {
+            "飞叶快刀_燕返_攻击强化": {
+              "win": 2,
+              "lost": 2
+            }
+          }
+        },
+        "HCN21KQ": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "飞叶快刀_燕返_攻击强化": {
+              "win": 0,
+              "lost": 2
+            }
+          }
+        },
+        "G5NG3N3": {
+          "win": 4,
+          "lost": 0,
+          "battle_sets": {
+            "飞叶快刀_燕返_攻击强化": {
+              "win": 4,
+              "lost": 0
+            }
+          }
+        },
+        "H1KC46F": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "飞叶快刀_燕返_攻击强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "飞叶快刀_燕返_攻击强化": {
+          "win": 13,
+          "lost": 7
+        }
+      }
+    },
+    "卡比兽": {
+      "win": 14,
+      "lost": 3,
+      "players": {
+        "79KM109": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "重磅冲撞_挡路_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "6P0515": {
+          "win": 3,
+          "lost": 2,
+          "battle_sets": {
+            "重磅冲撞_挡路_速度强化": {
+              "win": 2,
+              "lost": 2
+            },
+            "抓狂_挡路_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "FLG7KA": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "重磅冲撞_哈欠_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "K32ET2K": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "重磅冲撞_挡路_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "44AFPRF": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "重磅冲撞_挡路_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "PY1RRC9": {
+          "win": 5,
+          "lost": 0,
+          "battle_sets": {
+            "抓狂_挡路_速度强化": {
+              "win": 2,
+              "lost": 0
+            },
+            "重磅冲撞_挡路_速度强化": {
+              "win": 1,
+              "lost": 0
+            },
+            "抓狂_哈欠_速度强化": {
+              "win": 1,
+              "lost": 0
+            },
+            "抓狂_挡路_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NHMQEPC": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "重磅冲撞_挡路_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "H1KC46F": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "重磅冲撞_挡路_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            },
+            "重磅冲撞_哈欠_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "重磅冲撞_挡路_逃脱按键": {
+          "win": 4,
+          "lost": 0
+        },
+        "重磅冲撞_挡路_速度强化": {
+          "win": 4,
+          "lost": 2
+        },
+        "抓狂_挡路_速度强化": {
+          "win": 3,
+          "lost": 0
+        },
+        "重磅冲撞_哈欠_逃脱按键": {
+          "win": 1,
+          "lost": 1
+        },
+        "抓狂_哈欠_速度强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "抓狂_挡路_万灵药": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "超级暴鲤龙": {
+      "win": 23,
+      "lost": 8,
+      "players": {
+        "X72NP18": {
+          "win": 4,
+          "lost": 0,
+          "battle_sets": {
+            "龙息_攀瀑_伤药": {
+              "win": 4,
+              "lost": 0
+            }
+          }
+        },
+        "R22M468": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "龙息_攀瀑_万灵药": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "479XTPA": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "龙息_攀瀑_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "Q0PH5T1": {
+          "win": 8,
+          "lost": 2,
+          "battle_sets": {
+            "龙息_攀瀑_伤药": {
+              "win": 8,
+              "lost": 2
+            }
+          }
+        },
+        "1N4C6RT": {
+          "win": 2,
+          "lost": 3,
+          "battle_sets": {
+            "龙息_攀瀑_万灵药": {
+              "win": 2,
+              "lost": 3
+            }
+          }
+        },
+        "4QAH99C": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "龙息_攀瀑_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "EN7C58P": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "龙息_攀瀑_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 2,
+          "lost": 2,
+          "battle_sets": {
+            "龙息_攀瀑_万灵药": {
+              "win": 2,
+              "lost": 2
+            }
+          }
+        },
+        "1FYYQPF": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "龙息_攀瀑_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "XRKA6CM": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "龙息_攀瀑_伤药": {
+              "win": 0,
+              "lost": 1
+            },
+            "龙息_攀瀑_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "龙息_攀瀑_伤药": {
+          "win": 15,
+          "lost": 3
+        },
+        "龙息_攀瀑_万灵药": {
+          "win": 7,
+          "lost": 5
+        },
+        "龙息_攀瀑_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "可达鸭": {
+      "win": 4,
+      "lost": 3,
+      "players": {
+        "R22M468": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "冲浪_定身法_伤药": {
+              "win": 0,
+              "lost": 1
+            },
+            "冲浪_精神强念_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "GGGXNM7": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "泡沫光线_精神强念_伤药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "YCT6K2M": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "泡沫光线_定身法_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "K32ET2K": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "冲浪_精神强念_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "Q3KF0XR": {
+          "win": 1,
+          "lost": 1,
+          "battle_sets": {
+            "冲浪_精神强念_伤药": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "冲浪_定身法_伤药": {
+          "win": 0,
+          "lost": 1
+        },
+        "冲浪_精神强念_伤药": {
+          "win": 3,
+          "lost": 1
+        },
+        "泡沫光线_精神强念_伤药": {
+          "win": 0,
+          "lost": 1
+        },
+        "泡沫光线_定身法_攻击强化": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "水君": {
+      "win": 10,
+      "lost": 10,
+      "players": {
+        "R22M468": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "潮旋_冰冻光束_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "8969LMA": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "潮旋_冰冻光束_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "QQRY93E": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "潮旋_冰冻光束_逃脱按键": {
+              "win": 2,
+              "lost": 0
+            }
+          }
+        },
+        "FLG7KA": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潮旋_冰冻光束_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "54RP3EQ": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "潮旋_冰冻光束_逃脱按键": {
+              "win": 0,
+              "lost": 2
+            }
+          }
+        },
+        "6C33ALE": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潮旋_冰冻光束_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "2A66AC0": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "潮旋_冰冻光束_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "Q3KF0XR": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "潮旋_冰冻光束_伤药": {
+              "win": 0,
+              "lost": 1
+            },
+            "冲浪_冰冻之风_伤药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "MM7PYR8": {
+          "win": 4,
+          "lost": 1,
+          "battle_sets": {
+            "潮旋_冰冻光束_逃脱按键": {
+              "win": 4,
+              "lost": 1
+            }
+          }
+        },
+        "G61M85M": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潮旋_冰冻光束_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "G4829H7": {
+          "win": 1,
+          "lost": 2,
+          "battle_sets": {
+            "潮旋_冰冻光束_速度强化": {
+              "win": 0,
+              "lost": 2
+            },
+            "冲浪_冰冻之风_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "潮旋_冰冻光束_逃脱按键": {
+          "win": 9,
+          "lost": 6
+        },
+        "潮旋_冰冻光束_伤药": {
+          "win": 0,
+          "lost": 1
+        },
+        "冲浪_冰冻之风_伤药": {
+          "win": 0,
+          "lost": 1
+        },
+        "潮旋_冰冻光束_速度强化": {
+          "win": 0,
+          "lost": 2
+        },
+        "冲浪_冰冻之风_速度强化": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "霜奶仙": {
+      "win": 11,
+      "lost": 2,
+      "players": {
+        "8969LMA": {
+          "win": 5,
+          "lost": 0,
+          "battle_sets": {
+            "自我再生_甜甜香气_速度强化": {
+              "win": 5,
+              "lost": 0
+            }
+          }
+        },
+        "9PNQL3A": {
+          "win": 4,
+          "lost": 0,
+          "battle_sets": {
+            "自我再生_甜甜香气_逃脱按键": {
+              "win": 4,
+              "lost": 0
+            }
+          }
+        },
+        "6C33ALE": {
+          "win": 2,
+          "lost": 2,
+          "battle_sets": {
+            "自我再生_甜甜香气_逃脱按键": {
+              "win": 2,
+              "lost": 2
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "自我再生_甜甜香气_速度强化": {
+          "win": 5,
+          "lost": 0
+        },
+        "自我再生_甜甜香气_逃脱按键": {
+          "win": 6,
+          "lost": 2
+        }
+      }
+    },
+    "捷拉奥拉": {
+      "win": 3,
+      "lost": 5,
+      "players": {
+        "6P0515": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "电光_疯狂伏特_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "G61M85M": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "伏特替换_放电_万灵药": {
+              "win": 0,
+              "lost": 2
+            }
+          }
+        },
+        "PY1RRC9": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "伏特替换_放电_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "R0Y9XRC": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "电光_疯狂伏特_攻击强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "R8PTXY6": {
+          "win": 1,
+          "lost": 2,
+          "battle_sets": {
+            "电光_疯狂伏特_万灵药": {
+              "win": 1,
+              "lost": 2
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "电光_疯狂伏特_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        },
+        "伏特替换_放电_万灵药": {
+          "win": 1,
+          "lost": 2
+        },
+        "电光_疯狂伏特_攻击强化": {
+          "win": 0,
+          "lost": 1
+        },
+        "电光_疯狂伏特_万灵药": {
+          "win": 1,
+          "lost": 2
+        }
+      }
+    },
+    "千面避役": {
+      "win": 5,
+      "lost": 0,
+      "players": {
+        "6P0515": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "致命针刺_狙击_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "YCT6K2M": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "致命针刺_狙击_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "87X5AHH": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "致命针刺_狙击_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "AG15T5R": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "致命针刺_狙击_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "XRKA6CM": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "致命针刺_狙击_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "致命针刺_狙击_逃脱按键": {
+          "win": 5,
+          "lost": 0
+        }
+      }
+    },
+    "藏饱栗鼠": {
+      "win": 5,
+      "lost": 1,
+      "players": {
+        "934M343": {
+          "win": 3,
+          "lost": 0,
+          "battle_sets": {
+            "种子机关枪_大快朵颐_万灵药": {
+              "win": 2,
+              "lost": 0
+            },
+            "打嗝_渴望_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "G4829H7": {
+          "win": 2,
+          "lost": 1,
+          "battle_sets": {
+            "打嗝_渴望_速度强化": {
+              "win": 2,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "种子机关枪_大快朵颐_万灵药": {
+          "win": 2,
+          "lost": 0
+        },
+        "打嗝_渴望_万灵药": {
+          "win": 1,
+          "lost": 0
+        },
+        "打嗝_渴望_速度强化": {
+          "win": 2,
+          "lost": 1
+        }
+      }
+    },
+    "阿勃梭鲁": {
+      "win": 1,
+      "lost": 1,
+      "players": {
+        "FLG7KA": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "追打_精神利刃_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "54RP3EQ": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "追打_突袭_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "追打_精神利刃_万灵药": {
+          "win": 1,
+          "lost": 0
+        },
+        "追打_突袭_逃脱按键": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "甜冷美后": {
+      "win": 9,
+      "lost": 4,
+      "players": {
+        "9PNQL3A": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "踩踏_热带踢_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NAMLAA0": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "踩踏_热带踢_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 1,
+          "lost": 2,
+          "battle_sets": {
+            "踩踏_青草滑梯_万灵药": {
+              "win": 0,
+              "lost": 2
+            },
+            "三旋击_青草滑梯_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "NQC1MP1": {
+          "win": 6,
+          "lost": 2,
+          "battle_sets": {
+            "踩踏_热带踢_攻击强化": {
+              "win": 1,
+              "lost": 1
+            },
+            "踩踏_热带踢_万灵药": {
+              "win": 4,
+              "lost": 0
+            },
+            "踩踏_青草滑梯_万灵药": {
+              "win": 1,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "踩踏_热带踢_万灵药": {
+          "win": 6,
+          "lost": 0
+        },
+        "踩踏_青草滑梯_万灵药": {
+          "win": 1,
+          "lost": 3
+        },
+        "三旋击_青草滑梯_万灵药": {
+          "win": 1,
+          "lost": 0
+        },
+        "踩踏_热带踢_攻击强化": {
+          "win": 1,
+          "lost": 1
+        }
+      }
+    },
+    "帝王拿波": {
+      "win": 5,
+      "lost": 2,
+      "players": {
+        "9PNQL3A": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潮旋_金属爪_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "加农水炮_水流喷射_万灵药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "AG15T5R": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "加农水炮_金属爪_万灵药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "XRKA6CM": {
+          "win": 2,
+          "lost": 1,
+          "battle_sets": {
+            "加农水炮_水流喷射_万灵药": {
+              "win": 2,
+              "lost": 1
+            }
+          }
+        },
+        "G4829H7": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潮旋_金属爪_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "潮旋_金属爪_万灵药": {
+          "win": 1,
+          "lost": 0
+        },
+        "加农水炮_水流喷射_万灵药": {
+          "win": 3,
+          "lost": 1
+        },
+        "加农水炮_金属爪_万灵药": {
+          "win": 0,
+          "lost": 1
+        },
+        "潮旋_金属爪_速度强化": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "胡帕": {
+      "win": 4,
+      "lost": 0,
+      "players": {
+        "9PNQL3A": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潜灵奇袭_异次元洞_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "K32ET2K": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潜灵奇袭_异次元洞_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "G61M85M": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潜灵奇袭_异次元洞_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "H1KC46F": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "潜灵奇袭_异次元洞_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "潜灵奇袭_异次元洞_速度强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "潜灵奇袭_异次元洞_逃脱按键": {
+          "win": 3,
+          "lost": 0
+        }
+      }
+    },
+    "勾魂眼": {
+      "win": 2,
+      "lost": 1,
+      "players": {
+        "9PNQL3A": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "拍落_奇异之光_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "6C33ALE": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "拍落_奇异之光_得分加速装置": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "PY1RRC9": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "拍落_出奇一击_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "拍落_奇异之光_速度强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "拍落_奇异之光_得分加速装置": {
+          "win": 1,
+          "lost": 0
+        },
+        "拍落_出奇一击_速度强化": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "仙子伊布": {
+      "win": 2,
+      "lost": 0,
+      "players": {
+        "54RP3EQ": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "魔法火焰_吸取之吻_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "44AFPRF": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "魔法火焰_吸取之吻_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "魔法火焰_吸取之吻_伤药": {
+          "win": 2,
+          "lost": 0
+        }
+      }
+    },
+    "月亮伊布": {
+      "win": 4,
+      "lost": 3,
+      "players": {
+        "828A4X7": {
+          "win": 2,
+          "lost": 3,
+          "battle_sets": {
+            "移花接木_大声咆哮_速度强化": {
+              "win": 0,
+              "lost": 1
+            },
+            "黑色目光_祈愿_速度强化": {
+              "win": 1,
+              "lost": 0
+            },
+            "黑色目光_大声咆哮_速度强化": {
+              "win": 1,
+              "lost": 2
+            }
+          }
+        },
+        "230NANT": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "移花接木_祈愿_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "4QAH99C": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "移花接木_大声咆哮_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "移花接木_大声咆哮_速度强化": {
+          "win": 0,
+          "lost": 1
+        },
+        "黑色目光_祈愿_速度强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "黑色目光_大声咆哮_速度强化": {
+          "win": 1,
+          "lost": 2
+        },
+        "移花接木_祈愿_速度强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "移花接木_大声咆哮_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "白蓬蓬": {
+      "win": 4,
+      "lost": 2,
+      "players": {
+        "828A4X7": {
+          "win": 3,
+          "lost": 0,
+          "battle_sets": {
+            "花粉团_棉花防守_速度强化": {
+              "win": 3,
+              "lost": 0
+            }
+          }
+        },
+        "230NANT": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "花粉团_棉花防守_万灵药": {
+              "win": 0,
+              "lost": 2
+            }
+          }
+        },
+        "2H3HTN1": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "青草搅拌器_棉孢子_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "花粉团_棉花防守_速度强化": {
+          "win": 3,
+          "lost": 0
+        },
+        "花粉团_棉花防守_万灵药": {
+          "win": 0,
+          "lost": 2
+        },
+        "青草搅拌器_棉孢子_攻击强化": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "坚盾剑怪": {
+      "win": 0,
+      "lost": 2,
+      "players": {
+        "1N4C6RT": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "暗影爪_铁头_伤药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "H1KC46F": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "暗影爪_广域防守_伤药": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "暗影爪_铁头_伤药": {
+          "win": 0,
+          "lost": 1
+        },
+        "暗影爪_广域防守_伤药": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "皮卡丘": {
+      "win": 1,
+      "lost": 5,
+      "players": {
+        "RTTX1T7": {
+          "win": 1,
+          "lost": 2,
+          "battle_sets": {
+            "打雷_十万伏特_速度强化": {
+              "win": 1,
+              "lost": 2
+            }
+          }
+        },
+        "L8EPXF5": {
+          "win": 0,
+          "lost": 2,
+          "battle_sets": {
+            "电球_伏特攻击_逃脱按键": {
+              "win": 0,
+              "lost": 2
+            }
+          }
+        },
+        "44AFPRF": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "电球_伏特攻击_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "打雷_十万伏特_速度强化": {
+          "win": 1,
+          "lost": 2
+        },
+        "电球_伏特攻击_逃脱按键": {
+          "win": 0,
+          "lost": 3
+        }
+      }
+    },
+    "玛力露丽": {
+      "win": 9,
+      "lost": 11,
+      "players": {
+        "FR223N5": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "嬉闹_潮旋_速度强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "780MC84": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "水之波动_水流尾_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "AG15T5R": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "嬉闹_水流尾_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "G4829H7": {
+          "win": 7,
+          "lost": 10,
+          "battle_sets": {
+            "嬉闹_潮旋_攻击强化": {
+              "win": 0,
+              "lost": 1
+            },
+            "嬉闹_潮旋_伤药": {
+              "win": 7,
+              "lost": 9
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "嬉闹_潮旋_速度强化": {
+          "win": 0,
+          "lost": 1
+        },
+        "水之波动_水流尾_速度强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "嬉闹_水流尾_速度强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "嬉闹_潮旋_攻击强化": {
+          "win": 0,
+          "lost": 1
+        },
+        "嬉闹_潮旋_伤药": {
+          "win": 7,
+          "lost": 9
+        }
+      }
+    },
+    "胖可丁": {
+      "win": 1,
+      "lost": 0,
+      "players": {
+        "K32ET2K": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "魔法闪耀_唱歌_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "魔法闪耀_唱歌_速度强化": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "苍炎刃鬼": {
+      "win": 2,
+      "lost": 2,
+      "players": {
+        "Q3KF0XR": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "精神利刃_潜灵奇袭_攻击强化": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        },
+        "64HFPAG": {
+          "win": 2,
+          "lost": 0,
+          "battle_sets": {
+            "精神利刃_蓄能焰袭_攻击强化": {
+              "win": 1,
+              "lost": 0
+            },
+            "悔念剑_潜灵奇袭_攻击强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        },
+        "XRKA6CM": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "精神利刃_潜灵奇袭_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "精神利刃_潜灵奇袭_攻击强化": {
+          "win": 0,
+          "lost": 1
+        },
+        "精神利刃_蓄能焰袭_攻击强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "悔念剑_潜灵奇袭_攻击强化": {
+          "win": 1,
+          "lost": 0
+        },
+        "精神利刃_潜灵奇袭_逃脱按键": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    },
+    "拉普拉斯": {
+      "win": 1,
+      "lost": 0,
+      "players": {
+        "NQC1MP1": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "水之波动_冰冻光束_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "水之波动_冰冻光束_速度强化": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "巨金怪": {
+      "win": 1,
+      "lost": 0,
+      "players": {
+        "H1KC46F": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "陀螺球_电磁飘浮_逃脱按键": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "陀螺球_电磁飘浮_逃脱按键": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "魔墙人偶": {
+      "win": 1,
+      "lost": 0,
+      "players": {
+        "H1KC46F": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "念力_屏障_速度强化": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "念力_屏障_速度强化": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "巨锻匠": {
+      "win": 1,
+      "lost": 0,
+      "players": {
+        "AG15T5R": {
+          "win": 1,
+          "lost": 0,
+          "battle_sets": {
+            "巨力锤_小偷_伤药": {
+              "win": 1,
+              "lost": 0
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "巨力锤_小偷_伤药": {
+          "win": 1,
+          "lost": 0
+        }
+      }
+    },
+    "列阵兵": {
+      "win": 0,
+      "lost": 1,
+      "players": {
+        "R8PTXY6": {
+          "win": 0,
+          "lost": 1,
+          "battle_sets": {
+            "铁头_围攻_逃脱按键": {
+              "win": 0,
+              "lost": 1
+            }
+          }
+        }
+      },
+      "battle_sets": {
+        "铁头_围攻_逃脱按键": {
+          "win": 0,
+          "lost": 1
+        }
+      }
+    }
+  },
+  "match_count": 712
+}

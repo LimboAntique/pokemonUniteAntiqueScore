@@ -1,53 +1,93 @@
 # Blake Xu
 
 import csv
+import logging
 import time
 import json
 import os
+from pathlib import Path
+from typing import Optional, Dict, List, Any
 import AntiqueScoreUtil
 from AntiqueDriver import AntiqueDriver
-from pprint import pprint
 
-script_ver = 0.3
-support_languages = ["Chinese", "English"]
-path = "./dump_data/top100daily/"
+# 配置日志
+logger = logging.getLogger(__name__)
+
+# 常量配置
+DATA_DIR = Path("./dump_data")
+DAILY_DIR = DATA_DIR / "top100daily"
+VOICE_TEXT_PATH = Path("../voice_text.txt")
+
+# 阈值常量
+MIN_USE_RATE_THRESHOLD = 0.1  # 最小使用率阈值（10%）
+HISTORICAL_WEIGHT = 0.2  # 历史数据权重
+TOP_PLAYERS_DISPLAY_COUNT = 3  # 显示前N名玩家
+MAX_PLAYERS_COUNT = 100  # Top 100 玩家数量
 
 
 class Top100Players:
-    def __init__(self, driver):
-        self.items_statics = {}
+    """Top 100 玩家数据统计和分析类"""
+    
+    def __init__(self, driver: Optional[AntiqueDriver]) -> None:
+        """
+        初始化 Top100Players
+        
+        Args:
+            driver: AntiqueDriver 实例，用于绕过 Cloudflare 限制
+        """
         self.driver = driver
-        self.match_ids = {}
-        self.daily_data = {"pokemons": {}}
-        self.top100_players = []
+        self.match_ids: Dict[str, str] = {}
+        self.daily_data: Dict[str, Any] = {"pokemons": {}}
+        self.top100_players: List[str] = []
 
-    def get_current_top_100_players(self):
-        print("fetching current top 100 players list")
+    def get_current_top_100_players(self) -> None:
+        """获取当前 Top 100 玩家列表"""
+        logger.info("正在获取当前 Top 100 玩家列表...")
         url = AntiqueScoreUtil.url_base + "rankings/"
-        response = AntiqueScoreUtil.dump_crypto_url(self.driver, url)
-        print("response", response)
-        user_data = response.get('top100', [])
-        count = 0
-        # print(response_soup.select("#__next > div > main > div > div > div > div > div > div> p"))
-        # response_soup.select("#__next > div > main > div > div > div > div > div > div> p"):
-        for player in user_data:
-            count += 1
-            # if count == 100:
-            #     self.top100_players.append("1v1・Antique")
-            #     print("1v1・Antique")
-            # else:
-            # self.top100_players.append(player.get_text())
-            self.top100_players.append(player['Uid'])
-            print(player['RoleName'])
-            if count == 100:
-                break
-            if count >= 100:
-                break
+        
+        try:
+            response = AntiqueScoreUtil.dump_crypto_url(self.driver, url)
+            if not response:
+                logger.error("获取排行榜失败：响应为空")
+                return
+            
+            logger.debug(f"响应数据: {response}")
+            user_data = response.get('top100', [])
+            
+            if not user_data:
+                logger.warning("Top 100 列表为空")
+                return
+            
+            for count, player in enumerate(user_data, start=1):
+                self.top100_players.append(player['Uid'])
+                logger.debug(f"#{count}: {player['RoleName']}")
+                
+                if count >= MAX_PLAYERS_COUNT:
+                    break
+            
+            logger.info(f"成功获取 {len(self.top100_players)} 名玩家")
+            
+        except KeyError as e:
+            logger.error(f"解析玩家数据失败，缺少键: {e}")
+        except Exception as e:
+            logger.error(f"获取 Top 100 玩家列表时发生错误: {e}")
 
-    def get_yesterday_one_player_static(self, name, new_mode):
+    def get_yesterday_one_player_static(self, name: str, new_mode: bool = False) -> Dict:
+        """
+        获取单个玩家昨日的统计数据
+        
+        Args:
+            name: 玩家 UID
+            new_mode: 是否使用新模式（默认 False）
+            
+        Returns:
+            玩家统计数据字典
+        """
         data = AntiqueScoreUtil.get_one_player_data(self.driver, name, cache_days=1)
         if not data or "player" not in data:
+            logger.warning(f"无法获取玩家 {name} 的数据")
             return {}
+        
         name = data["player"]["profile"]["userShort"]
         if not new_mode:
             all_matches = list(
@@ -122,36 +162,64 @@ class Top100Players:
                 ][battle_set]["lost"] += 1
         return
 
-    def get_yesterday_all_players_statics(self, new_mode=False):
+    def get_yesterday_all_players_statics(self, new_mode: bool = False) -> None:
+        """
+        获取所有 Top 100 玩家昨日的统计数据
+        
+        Args:
+            new_mode: 是否使用新模式（默认 False）
+        """
+        # 构建文件路径
         if not new_mode:
-            json_file_path_name = (
-                    path + str(AntiqueScoreUtil.get_past_x_day_start_epoch(2)) + ".json"
-            )
+            json_file_name = f"{AntiqueScoreUtil.get_past_x_day_start_epoch(2)}.json"
         else:
-            json_file_path_name = (
-                    path + str(AntiqueScoreUtil.get_past_x_day_start_epoch(0)) + "_new_mode.json"
-            )
-        if os.path.exists(json_file_path_name):
-            print(json_file_path_name + " is generated before")
+            json_file_name = f"{AntiqueScoreUtil.get_past_x_day_start_epoch(0)}_new_mode.json"
+        
+        json_file_path = DAILY_DIR / json_file_name
+        
+        # 检查文件是否已存在
+        if json_file_path.exists():
+            logger.info(f"{json_file_path} 已存在，跳过生成")
             return
+        
+        # 获取 Top 100 玩家列表
         self.get_current_top_100_players()
-        if len(self.top100_players) < 100:
-            # print(len(self.top100_players))
-            print("fail to get top 100 players list")
+        if len(self.top100_players) < MAX_PLAYERS_COUNT:
+            logger.error(f"获取玩家列表失败，只获取到 {len(self.top100_players)} 名玩家")
             return
-        index = 1
-        for name in self.top100_players:
-            print(index)
+        
+        # 遍历所有玩家
+        logger.info(f"开始处理 {len(self.top100_players)} 名玩家的数据...")
+        for index, name in enumerate(self.top100_players, start=1):
+            logger.info(f"处理玩家 {index}/{len(self.top100_players)}: {name}")
             self.get_yesterday_one_player_static(name, new_mode)
-            index += 1
+        
+        # 保存数据
         self.daily_data["match_count"] = len(self.match_ids)
-        with open(json_file_path_name, "w") as outfile:
-            json.dump(self.daily_data, outfile)
-        return
+        
+        try:
+            # 确保目录存在
+            DAILY_DIR.mkdir(parents=True, exist_ok=True)
+            
+            with open(json_file_path, "w", encoding="utf-8") as outfile:
+                json.dump(self.daily_data, outfile, ensure_ascii=False, indent=2)
+            logger.info(f"成功保存数据到 {json_file_path}")
+        except IOError as e:
+            logger.error(f"保存文件失败: {e}")
+            raise
 
     @staticmethod
-    def _get_sort_key_by_win(data):
-        keys = list(filter(lambda k: type(data[k]) is dict, data.keys()))
+    def _get_sort_key_by_win(data: Dict[str, Any]) -> List[str]:
+        """
+        按胜场数和胜率排序
+        
+        Args:
+            data: 包含 win 和 lost 字段的数据字典
+            
+        Returns:
+            排序后的键列表
+        """
+        keys = [k for k in data.keys() if isinstance(data[k], dict)]
         keys = sorted(
             keys,
             key=lambda k: (
@@ -163,64 +231,93 @@ class Top100Players:
         return keys
 
     @staticmethod
-    def _get_player_name(driver, short_name):
+    def _get_player_name(driver: Optional[AntiqueDriver], short_name: str) -> str:
+        """
+        获取玩家全名
+        
+        Args:
+            driver: AntiqueDriver 实例
+            short_name: 玩家短名称
+            
+        Returns:
+            玩家全名，如果获取失败则返回短名称
+        """
         player_data = AntiqueScoreUtil.get_one_player_data(driver, short_name)
-        if "player" not in player_data:
+        if not player_data or "player" not in player_data:
             return short_name
         return player_data["player"]["profile"]["playerName"]
 
-    def get_past_x_days_summary(self, start=7, end=0, force_fetch=False, new_mode=False):
+    def get_past_x_days_summary(
+        self, 
+        start: int = 7, 
+        end: int = 0, 
+        force_fetch: bool = False, 
+        new_mode: bool = False
+    ) -> None:
+        """
+        获取过去 X 天的汇总统计数据
+        
+        Args:
+            start: 开始天数（默认 7）
+            end: 结束天数（默认 0）
+            force_fetch: 是否强制重新获取（默认 False）
+            new_mode: 是否使用新模式（默认 False）
+        """
         if start - end < 1:
-            print("start should smaller than end")
+            logger.error(f"参数错误：start ({start}) 应该大于 end ({end})")
             return
+        
+        logger.info(f"开始生成过去 {start-end} 天的统计数据...")
 
-        if not new_mode:
-            file_name = (
-                    time.strftime(
-                        "%Y-%b-%d",
-                        time.gmtime(AntiqueScoreUtil.get_past_x_day_start_epoch(start)),
-                    )
-                    + "_"
-                    + time.strftime(
-                "%Y-%b-%d",
-                time.gmtime(AntiqueScoreUtil.get_past_x_day_start_epoch(1 + end)),
-            )
-            )
-        else:
-            file_name = time.strftime(
-                "%Y-%b-%d",
-                time.gmtime(AntiqueScoreUtil.get_past_x_day_start_epoch(1 + end)),
-            ) + "_new_mode"
-        json_file_name = path + file_name + ".json"
-        if not force_fetch and os.path.exists(json_file_name):
-            with open(json_file_name, "r") as readfile:
-                data = json.load(readfile)
+        # 构建文件名
+        file_name = self._build_file_name(start, end, new_mode)
+        json_file_path = DAILY_DIR / f"{file_name}.json"
+        
+        # 加载或初始化数据
+        if not force_fetch and json_file_path.exists():
+            logger.info(f"从缓存加载数据: {json_file_path}")
+            try:
+                with open(json_file_path, "r", encoding="utf-8") as readfile:
+                    data = json.load(readfile)
+            except (IOError, json.JSONDecodeError) as e:
+                logger.error(f"读取缓存文件失败: {e}")
+                data = {}
         else:
             data = {}
 
         if not data:
-            # temp = {}
             players_items = {}
-            if not new_mode:
-                range_start = 1 + end
-                range_end = 1 + start
-            else:
-                range_start = 1
-                range_end = 2
+            range_start = 1 if new_mode else 1 + end
+            range_end = 2 if new_mode else 1 + start
+            
+            logger.info(f"加载第 {range_start} 到 {range_end-1} 天的数据...")
+            
             for d in range(range_start, range_end):
                 day_start = AntiqueScoreUtil.get_past_x_day_start_epoch(d)
+                
                 if not new_mode:
-                    file_path_name = path + str(day_start) + ".json"
+                    day_file_name = f"{day_start}.json"
                 else:
-                    file_path_name = path + str(AntiqueScoreUtil.get_past_x_day_start_epoch(0)) + "_new_mode.json"
-                if not os.path.exists(file_path_name):
-                    # print(file_path_name, d)
+                    day_file_name = f"{AntiqueScoreUtil.get_past_x_day_start_epoch(0)}_new_mode.json"
+                
+                day_file_path = DAILY_DIR / day_file_name
+                
+                if not day_file_path.exists():
                     if d == 0:
+                        logger.info(f"数据文件不存在，开始获取: {day_file_path}")
                         self.get_yesterday_all_players_statics(new_mode)
                     else:
+                        logger.warning(f"跳过不存在的文件: {day_file_path}")
                         continue
-                with open(file_path_name, "r") as readfile:
-                    data = AntiqueScoreUtil.merge_2_dicts(data, json.load(readfile))
+                
+                try:
+                    with open(day_file_path, "r", encoding="utf-8") as readfile:
+                        day_data = json.load(readfile)
+                        data = AntiqueScoreUtil.merge_2_dicts(data, day_data)
+                    logger.info(f"成功加载: {day_file_path}")
+                except (IOError, json.JSONDecodeError) as e:
+                    logger.error(f"读取文件失败 {day_file_path}: {e}")
+                    continue
                 data = Top100Players.add_win_rate(data)
                 for pokemon in data["pokemons"]:
                     battle_items = {}
@@ -326,431 +423,391 @@ class Top100Players:
                 )
                 data["pokemons_win_rate_sort_over_10_per"] = list(
                     filter(
-                        lambda k: data["pokemons"][k]["use_rate"] > 0.1,
+                        lambda k: data["pokemons"][k]["use_rate"] > MIN_USE_RATE_THRESHOLD,
                         AntiqueScoreUtil.get_sorted_dict_keys_list_by_value(
                             data["pokemons"], "win_rate", True
                         ),
                     )
                 )
-            with open(json_file_name, "w") as outfile:
-                json.dump(data, outfile)
-            print("dumped json file: " + json_file_name)
+            
+            # 保存 JSON 数据
+            try:
+                DAILY_DIR.mkdir(parents=True, exist_ok=True)
+                with open(json_file_path, "w", encoding="utf-8") as outfile:
+                    json.dump(data, outfile, ensure_ascii=False, indent=2)
+                logger.info(f"成功保存 JSON 文件: {json_file_path}")
+            except IOError as e:
+                logger.error(f"保存 JSON 文件失败: {e}")
+                raise
 
-        # csv file
-        csv_file_name = "./dump_data/" + "top100_players_" + file_name + ".csv"
+        # 生成完整 CSV 文件
+        csv_file_path = DATA_DIR / f"top100_players_{file_name}.csv"
+        logger.info(f"开始生成完整 CSV 文件: {csv_file_path}")
+        
         _index = 0
         index = 0
         use_rate = 0
-        with open(csv_file_name, "w", newline="") as csvfile:
-            writer = csv.writer(csvfile)
-            writer.writerow(["", "一共游戏场数", data["match_count"]])
-            for pokemon in data["pokemons_use_rate_sort"]:
-                _index += 1
-                if data["pokemons"][pokemon]["use_rate"] != use_rate:
-                    index = _index
-                use_rate = data["pokemons"][pokemon]["use_rate"]
-                writer.writerow(
-                    [
-                        index,
-                        pokemon,
-                        "\t\t-- 使用人数 --",
-                        "- 使用率 -",
-                        "- 胜场数 -",
-                        "-  胜  率  -",
-                    ]
-                )
-                writer.writerow(
-                    [
-                        "",
-                        "",
-                        len(data["pokemons"][pokemon]["players"]),
-                        str(round(100 * data["pokemons"][pokemon]["use_rate"], 2))
-                        + "%",
-                        data["pokemons"][pokemon]["win"],
-                        str(round(100 * data["pokemons"][pokemon]["win_rate"], 2))
-                        + "%",
-                    ]
-                )
-                writer.writerow(
-                    ["", "胜场数最多的三大玩家", "\t\t--- 玩家ID ---", "- 胜场数 -", "-  胜  率  -"]
-                )
-                count = 0
-                for name in data["pokemons"][pokemon]["players_win_sort"]:
-                    if count >= 3:
-                        break
+        
+        try:
+            DATA_DIR.mkdir(parents=True, exist_ok=True)
+            with open(csv_file_path, "w", newline="", encoding="utf-8-sig") as csvfile:
+                writer = csv.writer(csvfile)
+                writer.writerow(["", "一共游戏场数", data["match_count"]])
+                for pokemon in data["pokemons_use_rate_sort"]:
+                    _index += 1
+                    if data["pokemons"][pokemon]["use_rate"] != use_rate:
+                        index = _index
+                    use_rate = data["pokemons"][pokemon]["use_rate"]
+                    writer.writerow(
+                        [
+                            index,
+                            pokemon,
+                            "\t\t-- 使用人数 --",
+                            "- 使用率 -",
+                            "- 胜场数 -",
+                            "-  胜  率  -",
+                        ]
+                    )
                     writer.writerow(
                         [
                             "",
                             "",
-                            Top100Players._get_player_name(self.driver, name),
-                            data["pokemons"][pokemon]["players"][name]["win"],
-                            str(
-                                round(
-                                    100
-                                    * data["pokemons"][pokemon]["players"][name][
-                                        "win_rate"
-                                    ],
-                                    2,
-                                )
-                            )
+                            len(data["pokemons"][pokemon]["players"]),
+                            str(round(100 * data["pokemons"][pokemon]["use_rate"], 2))
+                            + "%",
+                            data["pokemons"][pokemon]["win"],
+                            str(round(100 * data["pokemons"][pokemon]["win_rate"], 2))
                             + "%",
                         ]
                     )
-                    count += 1
-                writer.writerow(
-                    [
-                        "",
-                        "技能对战道具组合",
-                        "\t\t--- 组  合 ---",
-                        "- 胜场数 -",
-                        "- 胜  率 -",
-                        "- 使用人数 -",
-                    ]
-                )
-                for battle_set in data["pokemons"][pokemon]["battle_set_win_sort"]:
-                    sets = []
-                    for skill in battle_set.split("_"):
-                        if not skill:
+                    writer.writerow(
+                        ["", "胜场数最多的三大玩家", "\t\t--- 玩家ID ---", "- 胜场数 -", "-  胜  率  -"]
+                    )
+                    count = 0
+                    for name in data["pokemons"][pokemon]["players_win_sort"]:
+                        if count >= TOP_PLAYERS_DISPLAY_COUNT:
+                            break
+                        writer.writerow(
+                            [
+                                "",
+                                "",
+                                Top100Players._get_player_name(self.driver, name),
+                                data["pokemons"][pokemon]["players"][name]["win"],
+                                str(
+                                    round(
+                                        100
+                                        * data["pokemons"][pokemon]["players"][name][
+                                            "win_rate"
+                                        ],
+                                        2,
+                                    )
+                                )
+                                + "%",
+                            ]
+                        )
+                        count += 1
+                    writer.writerow(
+                        [
+                            "",
+                            "技能对战道具组合",
+                            "\t\t--- 组  合 ---",
+                            "- 胜场数 -",
+                            "- 胜  率 -",
+                            "- 使用人数 -",
+                        ]
+                    )
+                    for battle_set in data["pokemons"][pokemon]["battle_set_win_sort"]:
+                        sets = []
+                        for skill in battle_set.split("_"):
+                            if not skill:
+                                continue
+                            if len(skill) < 3:
+                                skill += "\t"
+                            sets.append(skill)
+                        writer.writerow(
+                            [
+                                "",
+                                "",
+                                "\t".join(sets),
+                                # battle_set,
+                                data["pokemons"][pokemon]["battle_sets"][battle_set]["win"],
+                                str(
+                                    round(
+                                        100
+                                        * data["pokemons"][pokemon]["battle_sets"][
+                                            battle_set
+                                        ]["win_rate"],
+                                        2,
+                                    )
+                                )
+                                + "%",
+                                len(
+                                    data["pokemons"][pokemon]["battle_sets"][battle_set][
+                                        "players"
+                                    ]
+                                ),
+                            ]
+                        )
+                    writer.writerow(
+                        ["", "持有物组合", "\t\t--- 组  合 ---", "- 胜场数 -", "- 胜  率 -", "- 使用人数 -"]
+                    )
+                    for battle_item in data["pokemons"][pokemon]["battle_items_sort"]:
+                        if not battle_item:
                             continue
-                        if len(skill) < 3:
-                            skill += "\t"
-                        sets.append(skill)
-                    writer.writerow(
-                        [
-                            "",
-                            "",
-                            "\t".join(sets),
-                            # battle_set,
-                            data["pokemons"][pokemon]["battle_sets"][battle_set]["win"],
-                            str(
-                                round(
-                                    100
-                                    * data["pokemons"][pokemon]["battle_sets"][
-                                        battle_set
-                                    ]["win_rate"],
-                                    2,
-                                )
-                            )
-                            + "%",
-                            len(
-                                data["pokemons"][pokemon]["battle_sets"][battle_set][
-                                    "players"
-                                ]
-                            ),
-                        ]
-                    )
-                writer.writerow(
-                    ["", "持有物组合", "\t\t--- 组  合 ---", "- 胜场数 -", "- 胜  率 -", "- 使用人数 -"]
-                )
-                for battle_item in data["pokemons"][pokemon]["battle_items_sort"]:
-                    if not battle_item:
-                        continue
-                    items = []
-                    for item in battle_item.split("_"):
-                        items.append(item)
-                    writer.writerow(
-                        [
-                            "",
-                            "",
-                            "\t".join(items),
-                            data["pokemons"][pokemon]["battle_items"][battle_item][
-                                "win"
-                            ],
-                            str(
-                                round(
-                                    100
-                                    * (
-                                            data["pokemons"][pokemon]["battle_items"][
-                                                battle_item
-                                            ]["win"]
-                                            / (
-                                                    data["pokemons"][pokemon]["battle_items"][
-                                                        battle_item
-                                                    ]["win"]
-                                                    + data["pokemons"][pokemon]["battle_items"][
-                                                        battle_item
-                                                    ]["lost"]
-                                            )
-                                    ),
-                                    2,
-                                )
-                            )
-                            + "%",
-                            len(
+                        items = []
+                        for item in battle_item.split("_"):
+                            items.append(item)
+                        writer.writerow(
+                            [
+                                "",
+                                "",
+                                "\t".join(items),
                                 data["pokemons"][pokemon]["battle_items"][battle_item][
-                                    "players"
-                                ]
-                            ),
-                        ]
-                    )
-            index = _index + 1
-            # for pokemon in AntiqueScoreUtil.pokemon_chinese_name_dict:
-            #     if pokemon not in data["pokemons_use_rate_sort"]:
-            #         writer.writerow(
-            #             [
-            #                 index,
-            #                 AntiqueScoreUtil.pokemon_chinese_name_dict[pokemon],
-            #                 "\t\t-- 使用人数 --",
-            #                 "- 使用率 -",
-            #                 "- 胜场数 -",
-            #                 "-  胜  率  -",
-            #             ]
-            #         )
-            #         writer.writerow(["", "", 0, "0%", "0%", 0])
-        print("generated csv file: " + csv_file_name)
+                                    "win"
+                                ],
+                                str(
+                                    round(
+                                        100
+                                        * (
+                                                data["pokemons"][pokemon]["battle_items"][
+                                                    battle_item
+                                                ]["win"]
+                                                / (
+                                                        data["pokemons"][pokemon]["battle_items"][
+                                                            battle_item
+                                                        ]["win"]
+                                                        + data["pokemons"][pokemon]["battle_items"][
+                                                            battle_item
+                                                        ]["lost"]
+                                                )
+                                        ),
+                                        2,
+                                    )
+                                )
+                                + "%",
+                                len(
+                                    data["pokemons"][pokemon]["battle_items"][battle_item][
+                                        "players"
+                                    ]
+                                ),
+                            ]
+                        )
+                logger.info(f"成功生成完整 CSV 文件: {csv_file_path}")
+        except IOError as e:
+            logger.error(f"生成 CSV 文件失败: {e}")
+            raise
 
-        if not new_mode:
-            last_week_file_name = (
-                    time.strftime(
-                        "%Y-%b-%d",
-                        time.gmtime(AntiqueScoreUtil.get_past_x_day_start_epoch(start + 7)),
-                    )
-                    + "_"
-                    + time.strftime(
-                "%Y-%b-%d",
-                time.gmtime(AntiqueScoreUtil.get_past_x_day_start_epoch(end + 1 + 7)),
-            )
-            )
+        # 加载上周数据用于对比
+        last_week_file_name = self._build_file_name(start + 7, end + 7, new_mode)
+        last_week_json_path = DAILY_DIR / f"{last_week_file_name}.json"
+        
+        if not force_fetch and last_week_json_path.exists():
+            try:
+                with open(last_week_json_path, "r", encoding="utf-8") as readfile:
+                    last_week_data = json.load(readfile)
+                logger.info(f"加载上周数据: {last_week_json_path}")
+            except (IOError, json.JSONDecodeError) as e:
+                logger.warning(f"读取上周数据失败: {e}")
+                last_week_data = {"pokemons": {}}
         else:
-            last_week_file_name = time.strftime(
-                "%Y-%b-%d",
-                time.gmtime(AntiqueScoreUtil.get_past_x_day_start_epoch(1 + 7)),
-            ) + "_new_mode"
-        last_week_json_file_name = path + last_week_file_name + ".json"
-        if not force_fetch and os.path.exists(last_week_json_file_name):
-            with open(last_week_json_file_name, "r") as readfile:
-                last_week_data = json.load(readfile)
-        else:
+            logger.info("上周数据不存在，跳过对比")
             last_week_data = {"pokemons": {}}
+        # 生成简化 CSV 文件（仅限 7 天数据）
         if start - end == 7:
-            simple_csv_file_name = (
-                    "./dump_data/" + "top100_players_simple_" + file_name + ".csv"
-            )
+            simple_csv_path = DATA_DIR / f"top100_players_simple_{file_name}.csv"
+            logger.info(f"开始生成简化 CSV 文件: {simple_csv_path}")
+            
             use_rate = 0
             _index = 0
-            with open(simple_csv_file_name, "w", newline="") as csvfile:
-                fieldnames = ["排名", "名称", "使用人数", "使用率", "使用率变化", "胜场数", "胜率"]
-                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-                writer.writeheader()
-                for pokemon in data["pokemons_use_rate_sort"]:
-                    _index += 1
-                    if data["pokemons"][pokemon]["use_rate"] != use_rate:
-                        index = _index
-                    use_rate = data["pokemons"][pokemon]["use_rate"]
-                    last_week_use_rate = last_week_data["pokemons"].get(pokemon, {"use_rate": use_rate})["use_rate"]
-                    writer.writerow(
-                        {
-                            "排名": index,
-                            "名称": pokemon,
-                            "使用人数": len(data["pokemons"][pokemon]["players"]),
-                            "使用率": str(round(100 * use_rate, 2)) + "%",
-                            "使用率变化": str(round(100 * (use_rate - last_week_use_rate), 2)) + "%",
-                            "胜场数": data["pokemons"][pokemon]["win"],
-                            "胜率": str(
-                                round(100 * data["pokemons"][pokemon]["win_rate"], 2)
+            
+            try:
+                with open(simple_csv_path, "w", newline="", encoding="utf-8-sig") as csvfile:
+                    fieldnames = ["排名", "名称", "使用人数", "使用率", "使用率变化", "胜场数", "胜率"]
+                    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+                    writer.writeheader()
+                    for pokemon in data["pokemons_use_rate_sort"]:
+                        _index += 1
+                        if data["pokemons"][pokemon]["use_rate"] != use_rate:
+                            index = _index
+                        use_rate = data["pokemons"][pokemon]["use_rate"]
+                        last_week_use_rate = last_week_data["pokemons"].get(pokemon, {"use_rate": use_rate})["use_rate"]
+                        writer.writerow(
+                            {
+                                "排名": index,
+                                "名称": pokemon,
+                                "使用人数": len(data["pokemons"][pokemon]["players"]),
+                                "使用率": str(round(100 * use_rate, 2)) + "%",
+                                "使用率变化": str(round(100 * (use_rate - last_week_use_rate), 2)) + "%",
+                                "胜场数": data["pokemons"][pokemon]["win"],
+                                "胜率": str(
+                                    round(100 * data["pokemons"][pokemon]["win_rate"], 2)
+                                )
+                                        + "%",
+                            }
+                        )
+                    logger.info(f"成功生成简化 CSV 文件: {simple_csv_path}")
+            except IOError as e:
+                logger.error(f"生成简化 CSV 文件失败: {e}")
+                raise
+            
+            # 生成 AI 语音文本文件
+            logger.info(f"开始生成语音文本文件: {VOICE_TEXT_PATH}")
+            use_rate = 0
+            _index = 0
+            
+            try:
+                VOICE_TEXT_PATH.parent.mkdir(parents=True, exist_ok=True)
+                with open(VOICE_TEXT_PATH, "w", encoding="utf-8") as voice_file:
+                    for pokemon in data["pokemons_use_rate_sort"]:
+                        _index += 1
+                        if data["pokemons"][pokemon]["use_rate"] != use_rate:
+                            index = _index
+                        use_rate = data["pokemons"][pokemon]["use_rate"]
+                        if index != _index:
+                            voice_file.write("并列")
+                        voice_file.write(
+                            "第{0}名, {1}。\n".format(
+                                index, pokemon
                             )
-                                    + "%",
-                        }
-                    )
-            print("generated csv file: " + simple_csv_file_name)
-            ai_voice_txt_file_name = "../" + "voice_text" + ".txt"
-            use_rate = 0
-            _index = 0
-            with open(ai_voice_txt_file_name, "w") as voice_file:
-                for pokemon in data["pokemons_use_rate_sort"]:
-                    _index += 1
-                    if data["pokemons"][pokemon]["use_rate"] != use_rate:
-                        index = _index
-                    use_rate = data["pokemons"][pokemon]["use_rate"]
-                    if index != _index:
-                        voice_file.write("并列")
-                    voice_file.write(
-                        "第{0}名, {1}。\n".format(
-                            index, pokemon
                         )
-                    )
-                    voice_file.write(
-                        "使用率{0}%，较前周".format(
-                            str(round(100 * use_rate, 2)),
+                        voice_file.write(
+                            "使用率{0}%，较前周".format(
+                                str(round(100 * use_rate, 2)),
+                            )
                         )
-                    )
-                    last_week_use_rate = last_week_data["pokemons"].get(pokemon, {"use_rate": use_rate})["use_rate"]
-                    change = round(100 * (use_rate - last_week_use_rate), 2)
-                    if change > 0:
-                        voice_file.write("上升" + str(change) + "%")
-                    elif change < 0:
-                        voice_file.write("下降" + str(-change) + "%")
-                    else:
-                        voice_file.write("并没有变化")
-                    voice_file.write("。\n\n")
+                        last_week_use_rate = last_week_data["pokemons"].get(pokemon, {"use_rate": use_rate})["use_rate"]
+                        change = round(100 * (use_rate - last_week_use_rate), 2)
+                        if change > 0:
+                            voice_file.write("上升" + str(change) + "%")
+                        elif change < 0:
+                            voice_file.write("下降" + str(-change) + "%")
+                        else:
+                            voice_file.write("并没有变化")
+                        voice_file.write("。\n\n")
+                    
+                    logger.info(f"成功生成语音文本文件: {VOICE_TEXT_PATH}")
+            except IOError as e:
+                logger.error(f"生成语音文本文件失败: {e}")
+                raise
 
     @staticmethod
-    def add_win_rate(data):
+    def _build_file_name(start: int, end: int, new_mode: bool = False) -> str:
+        """
+        构建数据文件名
+        
+        Args:
+            start: 开始天数
+            end: 结束天数
+            new_mode: 是否使用新模式
+            
+        Returns:
+            文件名字符串（不含扩展名）
+        """
+        if not new_mode:
+            return (
+                time.strftime(
+                    "%Y-%b-%d",
+                    time.gmtime(AntiqueScoreUtil.get_past_x_day_start_epoch(start)),
+                )
+                + "_"
+                + time.strftime(
+                    "%Y-%b-%d",
+                    time.gmtime(AntiqueScoreUtil.get_past_x_day_start_epoch(1 + end)),
+                )
+            )
+        else:
+            return (
+                time.strftime(
+                    "%Y-%b-%d",
+                    time.gmtime(AntiqueScoreUtil.get_past_x_day_start_epoch(1 + end)),
+                )
+                + "_new_mode"
+            )
+
+    @staticmethod
+    def add_win_rate(data: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        递归添加胜率到数据字典
+        
+        Args:
+            data: 包含 win 和 lost 的数据字典
+            
+        Returns:
+            添加了 win_rate 字段的数据字典
+        """
         for key in data:
-            if type(data[key]) is dict:
+            if isinstance(data[key], dict):
                 data[key] = Top100Players.add_win_rate(data[key])
         if "win" in data and "lost" in data:
-            data["win_rate"] = data["win"] / (data["win"] + data["lost"])
+            total = data["win"] + data["lost"]
+            data["win_rate"] = data["win"] / total if total > 0 else 0
         return data
 
     @staticmethod
-    def merge_top100_player_2_days_static(data1, data2):
-        for pokemon in data1:
-            if pokemon == "match_count":
-                data1["match_count"] += data2["match_count"]
-                continue
-            if pokemon in data2:
-                data1[pokemon]["win"] += data2[pokemon]["win"]
-                data1[pokemon]["lost"] += data2[pokemon]["lost"]
-
-    @staticmethod
     def get_one_player_item_static(
-            driver,
-            name,
-            force_fetch=False,
-            cache_days=6,
-            total_battle_threshold=60,
-            season_battle_threshold=25,
-            season_battle_threshold_soft=10,
-            has_season_win=True,
-            retry=2,
-            should_print=True,
-    ):
+        driver: Optional[AntiqueDriver],
+        name: str,
+        force_fetch: bool = False,
+        cache_days: int = 6,
+        total_battle_threshold: int = 60,
+        season_battle_threshold: int = 25,
+        season_battle_threshold_soft: int = 10,
+        has_season_win: bool = True,
+        retry: int = 2,
+        should_print: bool = True,
+    ) -> Dict[str, Any]:
+        """
+        获取单个玩家的持有物统计数据
+        
+        Args:
+            driver: AntiqueDriver 实例
+            name: 玩家名称
+            force_fetch: 是否强制重新获取
+            cache_days: 缓存天数
+            total_battle_threshold: 总战斗场次阈值
+            season_battle_threshold: 赛季战斗场次阈值
+            season_battle_threshold_soft: 赛季战斗场次软阈值
+            has_season_win: 是否要求有赛季胜场
+            retry: 重试次数
+            should_print: 是否打印日志
+            
+        Returns:
+            玩家持有物数据字典
+        """
         player_data = {}
         data = AntiqueScoreUtil.get_one_player_data(
             driver, name, force_fetch, cache_days, retry, should_print=should_print
         )
         if not data:
             return {}
+        
         for pokemon in data["player"]["Pokemons"]:
             if (
-                    not has_season_win or int(pokemon["statistics"]["SeasonWins"]) > 0
+                not has_season_win or int(pokemon["statistics"]["SeasonWins"]) > 0
             ) and (
-                    (
-                            int(pokemon["TotalBattles"]) >= total_battle_threshold
-                            and int(pokemon["statistics"]["SeasonBattles"])
-                            >= season_battle_threshold_soft
-                    )
-                    or int(pokemon["statistics"]["SeasonBattles"])
-                    >= season_battle_threshold
+                (
+                    int(pokemon["TotalBattles"]) >= total_battle_threshold
+                    and int(pokemon["statistics"]["SeasonBattles"]) >= season_battle_threshold_soft
+                )
+                or int(pokemon["statistics"]["SeasonBattles"]) >= season_battle_threshold
             ):
                 if "Image" not in pokemon:
                     continue
+                
                 pokemon_name = AntiqueScoreUtil.unite_data[pokemon["Image"]]["chinese"]
-                items_string = AntiqueScoreUtil.get_pokemon_items_string(
-                    pokemon["Items"]
-                )
+                items_string = AntiqueScoreUtil.get_pokemon_items_string(pokemon["Items"])
+                
                 player_data[pokemon_name] = {
                     "items_string": items_string,
                     "win": pokemon["statistics"]["SeasonWins"]
                            + int(
-                        0.2
-                        * (
-                                pokemon["statistics"]["NoOfWins"]
-                                - pokemon["statistics"]["SeasonWins"]
-                        )
+                        HISTORICAL_WEIGHT
+                        * (pokemon["statistics"]["NoOfWins"] - pokemon["statistics"]["SeasonWins"])
                     ),
                     "total": pokemon["statistics"]["SeasonBattles"]
                              + int(
-                        0.2
-                        * (
-                                pokemon["statistics"]["TotalBattles"]
-                                - pokemon["statistics"]["SeasonBattles"]
-                        )
+                        HISTORICAL_WEIGHT
+                        * (pokemon["statistics"]["TotalBattles"] - pokemon["statistics"]["SeasonBattles"])
                     ),
                 }
         return player_data
-
-    def get_all_players_item_statics(
-            self, force_fetch=False, cache_days=7, battle_threshold=25
-    ):
-        self.get_current_top_100_players()
-        for name in self.top100_players:
-            data = self.get_one_player_item_static(
-                self.driver, name, force_fetch, cache_days, battle_threshold
-            )
-            for pokemon in data.keys():
-                if pokemon not in self.items_statics:
-                    self.items_statics[pokemon] = {}
-                items_string = data[pokemon]["items_string"]
-                if data[pokemon]["items_string"] not in self.items_statics[pokemon]:
-                    self.items_statics[pokemon][items_string] = {
-                        "win": 0,
-                        "total": 0,
-                        "hide_point": 0,
-                    }
-                self.items_statics[pokemon][items_string]["win"] += data[pokemon]["win"]
-                self.items_statics[pokemon][items_string]["total"] += data[pokemon][
-                    "total"
-                ]
-
-    def process_data(self):
-        new_data = {}
-        for pokemon in self.items_statics.keys():
-            new_data[pokemon] = {
-                "name": pokemon,
-                "chinese_name": AntiqueScoreUtil.unite_data[pokemon]["chinese"],
-            }
-            data = self.items_statics[pokemon]
-            # sorted_keys = sorted(data.keys(), key=lambda win: data[win]['win'], reverse=True)
-            sorted_keys = AntiqueScoreUtil.get_sorted_dict_keys_list_by_value(
-                data, "win", True
-            )
-            for index in range(min(3, len(sorted_keys))):
-                items = []
-                for item in sorted_keys[index].split("_"):
-                    items.append(AntiqueScoreUtil.item_name_dict[item])
-                new_data[pokemon]["item_set_" + str(1 + index)] = {
-                    "items": "\t".join(items),
-                    "win_count": data[sorted_keys[index]]["win"],
-                    "win_rate": str(
-                        round(
-                            100
-                            * data[sorted_keys[index]]["win"]
-                            / data[sorted_keys[index]]["total"],
-                            2,
-                        )
-                    )
-                                + "%",
-                }
-        return new_data
-
-    def dump_csv_cn(self):
-        try:
-            file_name = "./dump_data/items_recommend.csv"
-            data = self.process_data()
-            with open(file_name, "w", newline="") as csvfile:
-                fieldnames = ["名称", "持有物组合", "胜场", "胜率"]
-                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-                writer.writeheader()
-                for d in data.values():
-                    if "item_set_1" in d:
-                        writer.writerow(
-                            {
-                                "名称": d["chinese_name"],
-                                "持有物组合": d["item_set_1"]["items"],
-                                "胜场": d["item_set_1"]["win_count"],
-                                "胜率": d["item_set_1"]["win_rate"],
-                            }
-                        )
-                    if "item_set_2" in d:
-                        writer.writerow(
-                            {
-                                "名称": "",
-                                "持有物组合": d["item_set_2"]["items"],
-                                "胜场": d["item_set_2"]["win_count"],
-                                "胜率": d["item_set_2"]["win_rate"],
-                            }
-                        )
-                    if "item_set_3" in d:
-                        writer.writerow(
-                            {
-                                "名称": "",
-                                "持有物组合": d["item_set_3"]["items"],
-                                "胜场": d["item_set_3"]["win_count"],
-                                "胜率": d["item_set_3"]["win_rate"],
-                            }
-                        )
-            print("items_recommend.csv is generated")
-        except Exception as e:
-            print("items_recommend.csv failed due to " + e.message)
